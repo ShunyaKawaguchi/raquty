@@ -1,0 +1,288 @@
+.About_raquty .about_raquty_title {
+  position: relative;
+  text-align: left;
+  color: #000;
+  font-weight: 400;
+  z-index: 999;
+  margin-top: 30px;
+}
+
+.About_raquty .liner {
+  position: relative;
+  width: 0px;
+  background-color: #EDFF6F;
+  z-index: 998;
+  animation: drawLine 1.5s ease-out forwards;
+}
+
+.about_value {
+  line-height: 30px;
+}
+
+@media print, screen and (min-width: 960px) {
+  .About_raquty {
+    padding-top: 83px;
+    padding-bottom: 50px;
+  }
+  .About_raquty .about_raquty_title {
+    font-size: 45px;
+    padding: 0 10%;
+  }
+  .About_raquty .liner {
+    height: 17px;
+    margin: -40px 0 37px calc(5px + 10%);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 163px;
+    }
+  }
+  .About_raquty .main .wrap .about {
+    background-color: #000;
+    color: white;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+  .About_raquty .main .wrap .about_value {
+    margin: 15px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .About_raquty .main .top {
+    display: flex;
+    align-items: center;
+    margin: 0 10%;
+    margin-top: -50px;
+  }
+  .About_raquty .main .top .tennis-gif {
+    width: 50%;
+    margin-top: -50px;
+  }
+  .About_raquty .main .top .tennis-gif_smartphone {
+    display: none;
+  }
+  .About_raquty .main .top .wrap {
+    margin-top: 30px;
+    width: 50%;
+  }
+  .About_raquty .main .middle {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-right: 10%;
+  }
+  .About_raquty .main .middle img {
+    width: 60%;
+  }
+  .About_raquty .main .middle .wrap {
+    margin-left: 40px;
+    width: 40%;
+  }
+  .About_raquty .main .bottom {
+    display: flex;
+    align-items: center;
+    margin: 50px 3%;
+  }
+  .About_raquty .main .bottom .photo2 {
+    width: 20%;
+    height: 500px;
+    margin-right: 20px;
+  }
+  .About_raquty .main .bottom .pre_wrap {
+    width: 50%;
+  }
+  .About_raquty .main .bottom .photo3 {
+    width: 40%;
+    margin-left: 20px;
+  }
+  .About_raquty .main .bottom .photo4, .About_raquty .main .bottom .photo5 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 959px) and (min-width: 440px) {
+  .About_raquty {
+    padding-top: 83px;
+    padding-bottom: 50px;
+  }
+  .About_raquty .about_raquty_title {
+    font-size: 45px;
+    padding: 0 10%;
+  }
+  .About_raquty .liner {
+    height: 17px;
+    margin: -40px 0 37px calc(5px + 10%);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 163px;
+    }
+  }
+  .About_raquty .main .wrap .about {
+    background-color: #000;
+    color: white;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+  .About_raquty .main .wrap .about_value {
+    margin: 10px;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .About_raquty .main .top {
+    display: flex;
+    align-items: center;
+    margin: 0 5%;
+  }
+  .About_raquty .main .top .tennis-gif {
+    width: 45%;
+    margin-top: -50px;
+  }
+  .About_raquty .main .top .tennis-gif_smartphone {
+    display: none;
+  }
+  .About_raquty .main .top .wrap {
+    margin-top: 30px;
+    width: 55%;
+  }
+  .About_raquty .main .middle {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-right: 5%;
+  }
+  .About_raquty .main .middle img {
+    width: 60%;
+  }
+  .About_raquty .main .middle .wrap {
+    margin-left: 40px;
+    width: 40%;
+  }
+  .About_raquty .main .bottom {
+    display: flex;
+    align-items: center;
+    margin: 50px 3% 50px 5%;
+  }
+  .About_raquty .main .bottom .photo2, .About_raquty .main .bottom .photo4 {
+    display: none;
+  }
+  .About_raquty .main .bottom .pre_wrap {
+    width: 50%;
+  }
+  .About_raquty .main .bottom .photo3 {
+    width: 50%;
+    margin-left: 20px;
+  }
+  .About_raquty .main .bottom .photo4, .About_raquty .main .bottom .photo5 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 439px) {
+  .About_raquty {
+    padding-top: 63px;
+    padding-bottom: 50px;
+  }
+  .About_raquty .about_raquty_title {
+    font-size: 30px;
+    padding: 0 10%;
+  }
+  .About_raquty .liner {
+    height: 12px;
+    margin: -25px 0 37px calc(5px + 10%);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 105px;
+    }
+  }
+  .About_raquty .main .wrap .about {
+    background-color: #000;
+    color: white;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 16px;
+  }
+  .About_raquty .main .wrap .about_value {
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  .About_raquty .main .top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 2.5%;
+  }
+  .About_raquty .main .top .tennis-gif {
+    display: none;
+  }
+  .About_raquty .main .top .tennis-gif_smartphone {
+    margin-top: -50px;
+    width: 100%;
+  }
+  .About_raquty .main .top .wrap {
+    width: 100%;
+  }
+  .About_raquty .main .middle {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .About_raquty .main .middle img {
+    width: 100%;
+    margin: 40px 0;
+  }
+  .About_raquty .main .middle .wrap {
+    width: 100%;
+    margin: 0 2.5%;
+  }
+  .About_raquty .main .bottom {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .About_raquty .main .bottom .photo2, .About_raquty .main .bottom .photo3 {
+    display: none;
+  }
+  .About_raquty .main .bottom .photo4 {
+    width: 100%;
+    margin: 40px 0;
+  }
+  .About_raquty .main .bottom .pre_wrap {
+    width: 100%;
+  }
+  .About_raquty .main .bottom .pre_wrap .wrap {
+    margin: 0 2.5%;
+  }
+  .About_raquty .main .bottom .pre_wrap .inner_wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .About_raquty .main .bottom .pre_wrap .inner_wrap .photo5 {
+    margin-left: 3%;
+    width: 30%;
+    height: 300px;
+  }
+  .About_raquty .main .bottom .pre_wrap .inner_wrap .wrap {
+    width: 70%;
+  }
+}

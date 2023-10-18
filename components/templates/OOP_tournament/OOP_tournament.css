@@ -1,0 +1,46 @@
+.main {
+  display: flex;
+  height: 100vh;
+  padding-top: 63px;
+}
+
+.main h1 {
+  font-size: 100px;
+}
+
+@media screen and (min-width: 960px) {
+  .main {
+    padding-top: 63px;
+  }
+  .main a {
+    font-family: Audiowide;
+    height: 20px;
+    display: block;
+    border: #000;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 959px) and (min-width: 440px) {
+  .main {
+    padding-top: 63px;
+  }
+  .main a {
+    font-family: Audiowide;
+    height: 20px;
+    display: block;
+    border: #000;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 439px) {
+  .main {
+    padding-top: 63px;
+  }
+  .main a {
+    font-family: Audiowide;
+    height: 20px;
+    display: block;
+    border: #000;
+    margin-left: 20px;
+  }
+}/*# sourceMappingURL=OOP_tournament.css.map */

@@ -1,0 +1,434 @@
+.user_login{
+    font-family: Audiowide;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: rgb(230, 230, 230);
+    .raquty{
+        font-weight: 400;
+        text-align: left;
+    }
+    .main{
+        font-family: Audiowide;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+
+        .notice {
+            width: 100%;
+            font-weight: 200;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            color: red;
+            animation: loginFailureAnimation 0.5s ease-in-out;
+        }
+        
+        @keyframes loginFailureAnimation {
+            0%, 100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            25%, 75% {
+                transform: translateX(-10px);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateX(10px);
+                opacity: 0.6;
+            }
+        }
+        
+        .head,.foot{
+
+            a{
+                color: #000;
+                vertical-align: middle;
+
+                span{
+                    color: white;
+                    background-color: #000;
+                }
+            }
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        
+            input{
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #000;
+            }
+            .login_button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                position: relative;
+                transition: background-color 0.3s, color 0.3s, border-image 0.3s, border-color 0.3s;
+                background-color: rgb(230, 230, 230);
+                color: #000;
+                text-align: center;
+                text-decoration: none;
+                cursor: pointer;
+                border: 1.5px dashed transparent;
+                border-image: repeating-linear-gradient(
+                    45deg,
+                    #000,
+                    #000 10px,
+                    transparent 10px,
+                    transparent 20px
+                );
+                border-image-slice: 1;
+            }
+            
+            .login_button:hover {
+                background-color: #ccc;
+                border-color: #000;
+                border-image: repeating-linear-gradient(
+                    -45deg,
+                    #000,
+                    #000 5px,
+                    transparent 5px,
+                    transparent 10px
+                );
+                &::before {
+                    transform: translateX(5px);
+                }
+            }
+            
+            
+              
+        }
+    }
+}
+
+@media print,screen and (min-width: 960px) {
+.user_login{
+    padding: 83px 20% 80px 20%;
+
+    .raquty{
+        width: 40%;
+        font-size: 57px;
+    }
+    h2{
+        width: 60%;
+        text-align: left;
+        font-size: 35px;
+        margin-top: 50px;
+    }
+    .main{
+        width: 80%;
+
+        .smartphone_foot{
+            display: none;
+        }
+        .head{
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        .foot{
+            margin-top: 20px;
+        }
+        .head,.foot{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            
+            div{
+                width: 60%;
+                padding: 10px 0;
+                font-size: 14px;
+                height:30px;
+            }  
+            a {
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                text-decoration: none;
+                overflow:visible;
+                background: linear-gradient(to right, rgb(230, 230, 230), rgb(230, 230, 230)) no-repeat;
+                background-size: 200% 100%;
+                color: black;
+                transition: background-position 0.3s, color 0.3s, background-color 0.3s; 
+                padding: 0 20px 0 0;
+                border-radius: 25px;
+                height: 30px;
+                font-size: 14px;
+            
+                span {
+                    display: inline-block;
+                    text-align: center;
+                    padding: 5px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    font-weight: 200;
+                    background-color: rgb(0, 0, 0); 
+                    color: white;
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+            a:hover {
+                background-position: -100% 0;
+                color: white;
+                background-color: #000;
+                transition: background-position 0.3s, color 0.3s, background-color 0.3s; /* ホバー解除時のアニメーションを追加 */
+                span {
+                    background-color: rgb(0, 0, 0);
+                    color: white;
+                }
+            }
+        }
+        form{
+            
+            ::placeholder{
+                font-size: 16px;
+            }
+
+            label{
+                width: calc(100% - 20px);
+                font-size: 16px;
+                padding: 5px 10px;
+            }
+            input{
+                width: calc(100% - 40px);
+                height: 40px;
+                margin: 5px 10px;
+                padding: 5px 20px;
+                font-size: 20px;
+            }
+            .login_button{
+                margin: 25px 10px 15px 10px;
+            }
+        }   
+    }
+}
+
+
+}
+    
+@media print,screen and (max-width: 959px) and (min-width: 700px) {
+.user_login{
+    padding: 83px 10% 30px 10%;
+
+    .raquty{
+        width: 30%;
+        font-size: 57px;
+    }
+    h2{
+        width: calc(70% - 160px);
+        text-align: left;
+        font-size: 28px;
+        padding: 0 80px;
+        margin-top: 50px;
+    }
+    .main{
+        width: 70%;
+
+        .notice{
+            font-size: 12px;
+        }
+        .smartphone_foot{
+            display: none;
+        }
+        .head{
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        .foot{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .head,.foot{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;  
+            
+            div{
+                width: 50%;
+                padding: 10px 0;
+                font-size: 1.5vw;
+                height:30px;
+            }  
+            a {
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                text-decoration: none;
+                overflow:visible;
+                background: linear-gradient(to right, rgb(230, 230, 230), rgb(230, 230, 230)) no-repeat;
+                background-size: 200% 100%;
+                color: black;
+                transition: background-position 0.3s, color 0.3s, background-color 0.3s; 
+                padding: 1px 20px 0 0;
+                border-radius: 25px;
+                height: 30px;
+                font-size: 14px;
+            
+                span {
+                    display: inline-block;
+                    text-align: center;
+                    padding: 5px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    font-weight: 200;
+                    background-color: rgb(0, 0, 0); 
+                    color: white;
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+            a:hover {
+                background-position: -100% 0;
+                color: white;
+                background-color: #000;
+                transition: background-position 0.3s, color 0.3s, background-color 0.3s; /* ホバー解除時のアニメーションを追加 */
+                span {
+                    background-color: rgb(0, 0, 0);
+                    color: white;
+                }
+            }
+        }
+        form{
+            
+            ::placeholder{
+                font-size: 16px;
+            }
+            label{
+                width: calc(100% - 20px);
+                font-size: 16px;
+                padding: 5px 10px;
+            }
+            input{
+                width: calc(100% - 40px);
+                height: 40px;
+                margin: 5px 10px;
+                padding: 5px 20px;
+                font-size: 20px;
+            }
+            .login_button{
+                margin: 25px 10px 15px 10px;
+            }
+        }   
+    }
+}
+
+
+}
+       
+    
+@media screen and (max-width: 699px) {
+.user_login{
+    padding: 83px 10% 30px 10%;
+
+    .raquty{
+        width: 100%;
+        font-size: 42px;
+    }
+    h2{
+        width: calc(100% - 40px);
+        text-align: left;
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .main{
+        width: 100%;
+
+        .notice{
+            font-size: 12px;
+            margin-bottom: -10px;
+        }
+        .head{
+            display: none;
+        }
+        .smartphone_foot{
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .foot{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .smartphone_foot,.foot{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            
+            div{
+                width: 100%;
+                padding: 10px 0;
+                font-size: 12px;
+                height:20px;
+            }  
+            a {
+                vertical-align: middle;
+                position: relative;
+                text-decoration: none;
+                overflow: hidden;
+                background: linear-gradient(to right, rgb(230, 230, 230), rgb(230, 230, 230)) no-repeat;
+                background-size: 200% 100%;
+                color: black;
+                transition: background-position 0.3s, color 0.3s, background-color 0.3s; 
+                padding: 1px 20px 0 0;
+                border-radius: 25px;
+                height: 25px;
+                font-size: 10px;
+
+            
+                span {
+                    display: inline-block;
+                    text-align: center;
+                    padding: 5px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    font-weight: 200;
+                    background-color: rgb(0, 0, 0); 
+                    color: white;
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+            a:hover {
+                background-position: -100% 0;
+                color: white;
+                background-color: #000;
+                transition: background-position 0.3s, color 0.3s, background-color 0.3s; /* ホバー解除時のアニメーションを追加 */
+                span {
+                    background-color: rgb(0, 0, 0);
+                    color: white;
+                }
+            }
+        }
+        form{
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            ::placeholder{
+                font-size: 16px;
+            }
+            label{
+                width: calc(100% - 20px);
+                font-size: 16px;
+                padding: 5px 10px;
+            }
+            input{
+                width: calc(100% - 40px);
+                height: 40px;
+                margin: 5px 10px;
+                padding: 5px 20px;
+                font-size: 20px;
+            }
+            .login_button{
+                margin: 25px 10px 15px 10px;
+            }
+        }   
+    }
+}
+}

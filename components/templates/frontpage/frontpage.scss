@@ -1,0 +1,862 @@
+.frontpage-top {
+    text-align: center;
+    padding-top: 53px;
+    
+    .raquty{
+        position: relative;
+        text-align: left;
+        color: #000;
+        font-family: Audiowide;
+        font-weight: 400;
+        z-index: 999;
+        margin-top: 30px;
+    }
+    .liner {
+        position: relative;
+        width: 0px;
+        background-color: #EDFF6F;
+        z-index: 998;
+        animation: drawLine 1.5s ease-out forwards;
+    }
+    .sub-title {
+        position: relative;
+        text-align: left;
+        color: #000;
+        font-family: Lato;
+        font-weight: 400;
+        border-left: 2.5px solid #000;
+        z-index: 999;
+        padding-left: 10px;
+    }
+    .gif {
+        position: relative;
+    }
+}
+
+.frontpage-middle {
+    background: #EDEDE8;
+
+    .frontpage-middle-h2 {
+        display: flex;
+        justify-content: flex-end;
+        opacity: 0;
+        transform: translateX(100%);
+        animation: slideIn 0.5s forwards 0.5s;
+    }  
+    @keyframes slideIn {
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+    }
+    h2 {
+        background-color: #000;
+        color: white;
+        font-family: Audiowide;
+        border-radius: 25px 0 0 25px;
+        vertical-align: center;
+    }
+}
+  
+.frontpage_new_post{
+    background-color: white;
+    position: relative;
+
+    h2 {
+        background-color: #000;
+        color: white;
+        text-align: right;
+        font-family: Audiowide;
+        vertical-align: center;
+        border-radius: 0 25px 25px 0;
+    }
+    .post_list {
+        color: #000;
+        width: 60%;
+        margin: 40px auto;
+        display: block;
+        text-decoration: none;
+        overflow: hidden;
+
+        .date {
+            position: relative;
+            z-index: 999;
+            text-align: left;
+            font-family: Audiowide;
+            background-color: #F3F3F3;
+            transition: transform 0.5s;
+        }
+        .title {
+            position: relative;
+            z-index: 998;
+            text-align: left;
+            background-color: #D9D9D9;
+            transition: transform 0.5s;
+        }
+    }
+    .post_list:hover{
+        .date {
+            background-color: #1ABC9C;
+            color: #FFFFFF;
+            transform: scale(1.1);
+            font-weight: 400;
+            text-align: center;
+        }
+        .title {
+            background-color: #1ABC9C;
+            color: #FFFFFF;
+            transform: scale(1.1);
+            font-weight: 400;
+        }
+    }
+    .new_post_button {
+        background-color: #000;
+        color: white;
+        font-family: Audiowide;
+        font-size: 25px;
+        padding: 5px 60px;
+        border: 5px solid #EDFF6F;
+        text-decoration: none;
+    }  
+    
+
+} 
+
+
+@media print,screen and (min-width: 960px) {
+.frontpage-top {
+    margin: 0 120px;
+
+    .raquty {
+        font-size: 57px;
+    }
+    .liner {
+    height: 17px;
+    margin: -40px 0 37px 5px;
+    }
+    @keyframes drawLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 207px;
+    }
+    }
+    .sub-title {
+        font-size: 15px;
+    }
+    .gif {
+        margin-top: -160px;
+        height: 480px;
+        width: auto;
+    }
+}
+
+.frontpage-middle {
+    font-family: Audiowide;
+    
+    h2 {
+        width: 280px;
+        padding: 12px 20px;
+        font-size: 30px;
+    }
+}
+
+.wrapping{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .pre_wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+        .wrap{
+            width: calc(44% - 20px);
+            background-color: white;
+            margin: 3%;
+            border-radius: 10px;
+            padding: 20px 10px;
+
+            .about,.sub_title{
+                width: 100%;
+                text-align: center;
+            }
+            .about{
+                position: relative;
+                font-size: 28px;
+                font-weight: 600;
+                z-index: 999;
+                background-color: #EDFF6F;
+            }
+            .sub_title{
+                font-size: 14px;
+                padding: 8px;
+            }
+            .box,.down{
+                text-align: center;
+                margin:  2px 150px;
+                padding: 5px 10px;
+            }
+            .box{
+                border:2.5px solid #000;
+            }
+            .txt_wrap{
+                margin: 20px 80px;
+
+                .txt{
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    margin: 5px 0;
+
+                    span{
+                        display: block;
+                        margin-right: 15px;
+                        font-size: 24px;
+                        font-weight: 600;
+                        
+                    }
+                }
+            }
+            .tournament_boxes{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 20px 0;
+
+                .box_1,.box_2,.box_3,.box_4,.box_5,.box_6{
+                    width: 60%;
+                    padding: 40px 15px;
+                    text-align: center;
+                    border: 2px solid #000;
+                }
+                .box_1{
+                    background-color: #FB97A3;
+                    margin-right: 100px;
+                }
+                .box_2{
+                    background-color: white;
+                    margin-top: -20px;
+                    margin-right: -20px;
+                }
+                .box_3{
+                    background-color: #E4CDF7;
+                    margin-left: -70px;
+                    margin-top: -20px;
+                }
+                .box_4{
+                    background-color: #EDFF6F;
+                    margin-left: 100px;
+                }
+                .box_5{
+                    background-color: white;
+                    margin-top: -20px;
+                    margin-left: -20px;
+                }
+                .box_6{
+                    background-color: #7CC2F5;
+                    margin-right: -70px;
+                    margin-top: -20px;
+                }
+            }
+            .about_raquty_wrap{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .about_raquty{
+                    width: 60%;
+                    text-align: left;
+                    border: 3px solid #000;
+                    margin: 10px 0;
+                    
+                    
+                    p{  
+                        display: flex;
+                        align-items: center;
+                        padding: 5px 10px;
+                    }
+
+                    div{
+                        text-align: center;
+                        margin: 20px;
+                        margin: 0 auto;
+                        width: 100px;
+                        font-size: 24px;
+                        border-bottom: 1.5px solid #000;
+                    }
+                    
+                    span{
+                        font-weight: 600;
+                        font-size: 24px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .submit_wrap{
+                display: flex;
+                justify-content: center;
+
+                button{
+                    border: none;
+                    font-size: 18px;
+                    border-bottom: 1.5px solid #000;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+.frontpage_new_post {
+    margin-bottom: 150px;
+
+    h2 {
+        width: 280px;
+        padding: 12px 20px;
+        font-size: 30px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    .post_list {
+        width: 60%;
+
+        .date {
+            font-size: 16px;
+            width: 140px;
+            padding: 8px 45px;
+        }
+        .title {
+            width: 85%;
+            height: 65px;
+            margin: -8px 50px;
+            line-height: 65px;
+            padding: 0 50px;
+            font-size: 16px;
+        }
+    }
+    .new_post_button {
+        float: right;
+        margin: 0 20%;
+    }  
+}
+}
+
+@media screen and (max-width: 959px) and (min-width: 440px) {
+.frontpage-top {
+    margin: 0 20px;
+
+    .raquty {
+        font-size: 47px;
+        margin: 30px 40px;
+    }
+    .liner {
+        height: 14px;
+        margin: -62px 0 37px 45px;
+    }
+    @keyframes drawLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 165px;
+    }
+    }    
+    .sub-title {
+        margin: -12px 0 20px 40px;
+        font-size: 12px;
+    }
+    .gif {
+        width: 95vw;
+        height: auto;
+        margin-top: -200px;
+        margin-left: -10px;
+    }
+}
+
+.frontpage-middle {
+    font-family: Audiowide;
+
+    h2 {
+        width: 200px;
+        padding: 8px 16px;
+        font-size: 24px;
+    }
+}
+
+.wrapping{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .pre_wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+        .wrap{
+            width: calc(44% - 20px);
+            background-color: white;
+            margin: 3%;
+            border-radius: 10px;
+            padding: 20px 10px;
+
+            .about,.sub_title{
+                width: 100%;
+                text-align: center;
+            }
+            .about{
+                position: relative;
+                font-size: 28px;
+                font-weight: 600;
+                background-color: #EDFF6F;
+                z-index: 999;
+            }
+            .sub_title{
+                font-size: 14px;
+                padding: 8px;
+            }
+            .box,.down{
+                text-align: center;
+                margin:  2px 30px;
+                padding: 5px 10px;
+            }
+            .box{
+                border:2.5px solid #000;
+            }
+            .txt_wrap{
+                margin: 20px;
+
+                .txt{
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    margin: 5px 0;
+
+                    span{
+                        display: block;
+                        margin-right: 15px;
+                        font-size: 24px;
+                        font-weight: 600;
+                        
+                    }
+                }
+            }
+            .tournament_boxes{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 20px 0;
+
+                .box_1,.box_2,.box_3,.box_4,.box_5,.box_6{
+                    width: 70%;
+                    padding: 40px 15px;
+                    text-align: center;
+                    border: 2px solid #000;
+                }
+                .box_1{
+                    background-color: #FB97A3;
+                    margin-right: 30px;
+                }
+                .box_2{
+                    background-color: white;
+                    margin-top: -20px;
+                    margin-right: -60px;
+                }
+                .box_3{
+                    background-color: #E4CDF7;
+                    margin-left: -30px;
+                    margin-top: -20px;
+                }
+                .box_4{
+                    background-color: #EDFF6F;
+                    margin-left: 30px;
+                }
+                .box_5{
+                    background-color: white;
+                    margin-top: -20px;
+                    margin-left: -30px;
+                }
+                .box_6{
+                    background-color: #7CC2F5;
+                    margin-right: -40px;
+                    margin-top: -20px;
+                }
+            }
+            .about_raquty_wrap{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+
+                .about_raquty{
+                    width: 90%;
+                    text-align: left;
+                    border: 3px solid #000;
+                    margin: 10px 0;
+                    
+                    
+                    p{  
+                        display: flex;
+                        align-items: center;
+                        padding: 5px 10px;
+                    }
+
+                    div{
+                        text-align: center;
+                        margin: 20px;
+                        margin: 0 auto;
+                        width: 100px;
+                        font-size: 24px;
+                        border-bottom: 1.5px solid #000;
+                    }
+                    
+                    span{
+                        font-weight: 600;
+                        font-size: 24px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .submit_wrap{
+                display: flex;
+                justify-content: center;
+
+                button{
+                    border: none;
+                    font-size: 18px;
+                    border-bottom: 1.5px solid #000;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+
+.frontpage_slidebar {
+    h3 {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .slider_contents.slide_middle_left {
+        height: 300px;
+        width: 30%;
+        margin-left: -15%;
+    }
+    .slider_contents.slide_middle_right {
+        height: 300px;
+        width: 30%;
+        margin-right: -15%;
+    }
+    .slider_contents.slide_middle {
+        display: flex;
+        background-color: white;
+        height: 400px;
+        width: 40%;
+        margin: 10px 12px;
+        padding: 15px 20px;
+        border-radius: 55px;
+    }
+    .slide_end_left, .slide_end_right {
+        display: none;
+    }
+    .slide_middle img {
+        height: 32px;
+    }
+    .slide_middle h3 {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+}
+
+.frontpage_new_post {
+    margin-bottom: 150px;
+
+    h2 {
+        width: 200px;
+        padding: 8px 16px;
+        font-size: 24px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .post_list {
+        width: 80%;
+
+        .date {
+            font-size: 16px;
+            width: 140px;
+            padding: 8px 45px;
+          }
+          .title {
+            width: 85%;
+            height: 65px;
+            margin: -8px 50px;
+            line-height: 65px;
+            padding: 0 50px;
+            font-size: 13px;
+          }
+    }
+    .new_post_button {
+        margin: 30px 10%;
+        float: right;
+    }
+  }
+}
+@media screen and (max-width: 439px) {
+.frontpage-top {
+    margin: 0 20px;
+
+    .raquty {
+        font-size: 42px;
+        margin: 30px 40px;
+        }
+    .liner {
+        height: 14px;
+        margin: -60px 0 0 44px;
+    }
+    @keyframes drawLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 153px;
+    }
+    }
+    .sub-title {
+        margin: 20px 0 20px 40px;
+        font-size: 10px;
+    }
+    .gif {
+        width: 95vw;
+        height: auto;
+        margin-top: -50px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+
+.frontpage-middle {
+    font-family: Audiowide;
+
+    h2 {
+        width: 200px;
+        padding: 8px 16px;
+        font-size: 24px;
+    }
+}
+
+.wrapping{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .pre_wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+        .wrap{
+            width: calc(94% - 20px);
+            background-color: white;
+            margin: 3%;
+            border-radius: 10px;
+            padding: 20px 10px;
+
+            .about,.sub_title{
+                width: 100%;
+                text-align: center;
+            }
+            .about{
+                position: relative;
+                font-size: 28px;
+                font-weight: 600;
+                z-index: 999;
+                background-color: #EDFF6F;
+            }
+            .sub_title{
+                font-size: 14px;
+                margin: 8px 0;
+            }
+            .box,.down{
+                text-align: center;
+                margin:  2px 30px;
+                padding: 5px 10px;
+            }
+            .box{
+                border:2.5px solid #000;
+            }
+            .txt_wrap{
+                margin: 20px;
+
+                .txt{
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    margin: 5px 0;
+
+                    span{
+                        display: block;
+                        margin-right: 15px;
+                        font-size: 24px;
+                        font-weight: 600;
+                        
+                    }
+                }
+            }
+            .tournament_boxes{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 20px 0;
+
+                .box_1,.box_2,.box_3,.box_4,.box_5,.box_6{
+                    width: 70%;
+                    padding: 40px 15px;
+                    text-align: center;
+                    border: 2px solid #000;
+                }
+                .box_1{
+                    background-color: #FB97A3;
+                    margin-right: 30px;
+                }
+                .box_2{
+                    background-color: white;
+                    margin-top: -20px;
+                    margin-right: -60px;
+                }
+                .box_3{
+                    background-color: #E4CDF7;
+                    margin-left: -30px;
+                    margin-top: -20px;
+                }
+                .box_4{
+                    background-color: #EDFF6F;
+                    margin-left: 30px;
+                }
+                .box_5{
+                    background-color: white;
+                    margin-top: -20px;
+                    margin-left: -30px;
+                }
+                .box_6{
+                    background-color: #7CC2F5;
+                    margin-right: -40px;
+                    margin-top: -20px;
+                }
+            }
+            .about_raquty_wrap{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+
+                .about_raquty{
+                    width: 90%;
+                    text-align: left;
+                    border: 3px solid #000;
+                    margin: 10px 0;
+                    
+                    
+                    p{  
+                        display: flex;
+                        align-items: center;
+                        padding: 5px 10px;
+                    }
+
+                    div{
+                        text-align: center;
+                        margin: 20px;
+                        margin: 0 auto;
+                        width: 100px;
+                        font-size: 24px;
+                        border-bottom: 1.5px solid #000;
+                    }
+                    
+                    span{
+                        font-weight: 600;
+                        font-size: 24px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .submit_wrap{
+                display: flex;
+                justify-content: center;
+
+                button{
+                    border: none;
+                    font-size: 18px;
+                    border-bottom: 1.5px solid #000;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+.frontpage_slidebar {
+    h3 {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .slider_contents.slide_middle {
+        display: flex;
+        background-color: white;
+        height: 400px;
+        width: 55%;
+        margin: 10px 12px;
+        padding: 15px 20px;
+        border-radius: 55px;
+    }
+    .slide_end_left, .slide_end_right, .slide_middle_left, .slide_middle_right {
+        display: none;
+    }
+    .slide_middle img {
+        height: 28px;
+    }
+    .slide_middle h3 {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}
+
+.frontpage_new_post {
+    margin-bottom: 25px;
+
+    h2 {
+        width: 200px;
+        padding: 8px 16px;
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .post_list {
+    width: 90%;
+
+        .date {
+            font-size: 3vw;
+            width: 150px;
+            padding: 8px 45px;
+        }
+        .title {
+            width: 100%;
+            height: 65px;
+            margin: -15px 50px -15px 30px;
+            line-height: 65px;
+            padding: 10px 20px;
+            font-size: 12px;
+        }
+    }
+    .new_post_button {
+        margin: 20px 5%;
+        float: right;
+      }
+}
+
+}

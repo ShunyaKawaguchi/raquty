@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* 全てのページ度読み込まれるcssを設定します*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.h2-right-in {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideIn 0.5s forwards 0.5s;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+/* print setting */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+@page {
+  margin: 0mm 5mm;
+  size: A4 landscape;
+}

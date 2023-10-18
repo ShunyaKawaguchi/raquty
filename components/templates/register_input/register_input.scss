@@ -1,0 +1,463 @@
+.Register_Form{
+    font-family: Audiowide;
+    background-color: #e6e6e6;
+
+    .Register{
+        position: relative;
+        text-align: left;
+        color: #000;
+        font-weight: 400;
+        z-index: 999;
+        margin-top: 30px;
+    }
+    .liner {
+        position: relative;
+        width: 0px;
+        background-color: #EDFF6F;
+        z-index: 998;
+        animation: drawLine 1.5s ease-out forwards;
+    }
+    .h2_wrap{
+        h2{
+            background-color: #000;
+            text-align: right;
+            color: white;
+            font-family: Audiowide;
+            border-radius:  0 25px 25px 0;
+        }
+    }
+    .main{
+        padding: 0 10% 50px 10%;
+
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .reqire::before{
+                content: '*';
+                color: red;
+                margin-right: 10px;
+            }
+            input[type='text'],input[type='email'],input[type='password']{
+                text-align: left;
+                outline: none;
+                border: none;
+                border-bottom: 2px solid #000;
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+            input[type='checkbox']{
+                margin: 0;
+            }
+            .accept{
+                width: 60%;
+            }
+            label{
+                margin: 10px 0;
+            }
+            button{
+                width: 150px;
+            }
+            .reqire_text,.error_message{
+                color: red;
+            }
+            .terms_service{
+                font-family: Inter;
+                background-color: white;
+                border:1px solid #000;
+                overflow: scroll;
+            }
+            button{
+                text-align: center;
+                border: none;
+                transition: background-color 0.3s ease-in-out;
+                border-radius: 15px;
+                background-color: #ccc;
+            }
+            button:hover{
+                background-color: #00CED1;
+                color: white;
+            }
+        }
+    }
+}
+
+
+@media print,screen and (min-width: 960px) {
+.Register_Form{
+    padding-top: 83px;
+
+    .Register{
+        font-size: 57px;
+        padding: 0 10%;
+    }
+    .liner {
+        height: 17px;
+        margin: -40px 0 37px calc(5px + 10%);
+    }
+    @keyframes drawLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 230px;
+    }
+    }
+    .h2_wrap{
+    display: flex;
+    justify-content: flex-start;
+    opacity: 0;
+    margin: 30px 0;
+    transform: translateX(-100%);
+    animation: slideIn 0.5s forwards 0.5s;
+
+        h2 {
+            width: 250px;
+            padding: 12px 20px;
+            padding-right: 100px;
+            font-size: 16px;
+        }
+    }  
+    @keyframes slideIn {
+        to {
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+    .main{
+
+        form{
+
+            .reqire_text,.error_message{
+                font-size: 14px;
+                width: 100%;
+            }
+            label{
+                width: 100%;
+                font-weight: 600;
+            }
+            input[type='text']{
+                width:100%;
+            }
+            input[type='text'],input[type='email'],input[type='password']{
+                width: 100%;
+            }
+            .wrap{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:space-between;
+                width: 100%;
+                margin: 15px 0;
+
+                .inner_wrap{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 45%;
+                }
+                .inner_wrap_agree{
+                    display: flex;
+                    width: 80%;
+                }
+                input[type='checkbox']{
+                    width: 30px;
+                    margin-right: 30px;
+                }
+            }
+            .terms_service{
+               height: 400px;
+               padding: 15px 25px;
+               font-size: 14px;
+
+               h1{
+                font-size: 25px;
+                }
+                h2{
+                    font-size: 20px;
+                }
+            }
+            button{
+                margin: 20px 0;
+                width: 250px;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+.terms{
+    font-weight: 600;
+    margin-top: 30px;
+}
+}
+
+@media screen and (max-width: 959px) and (min-width: 770px) {
+.Register_Form{
+    padding-top: 83px;
+
+    .Register{
+        font-size: 57px;
+        padding: 0 10%;
+    }
+    .liner {
+        height: 17px;
+        margin: -40px 0 37px calc(5px + 10%);
+    }
+    @keyframes drawLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 230px;
+    }
+    }
+    .h2_wrap{
+        display: flex;
+        justify-content: flex-start;
+        opacity: 0;
+        margin: 30px 0;
+        transform: translateX(-100%);
+        animation: slideIn 0.5s forwards 0.5s;
+
+        h2 {
+            width: 250px;
+            padding: 12px 20px;
+            padding-right: 100px;
+            font-size: 16px;
+        }
+    }  
+    @keyframes slideIn {
+        to {
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+    .main{
+
+        form{
+
+            .reqire_text,.error_message{
+                font-size: 14px;
+                width: 90%;
+            }
+            label{
+                width: 90%;
+                font-weight: 600;
+                font-size: 14px;
+            }
+            input[type='text']{
+                width:100%;
+            }
+            input[type='text'],input[type='email'],input[type='password']{
+                width: 100%;
+                height: 30px;
+            }
+            .wrap{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content:space-between;
+                width: 100%;
+                margin: 15px 0;
+
+                .inner_wrap{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 45%;
+                }
+                .inner_wrap_agree{
+                    display: flex;
+                    width: 80%;
+                }
+                input[type='checkbox']{
+                    width: 30px;
+                    margin-right: 30px;
+                }
+            }
+            .terms_service{
+               height: 300px;
+               padding: 25px;
+               font-size: 14px;
+            }
+            button{
+                margin: 20px 0;
+                width: 250px;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+.terms{
+    font-weight: 600;
+    margin-top: 30px;
+}
+}
+
+@media screen and (max-width: 769px) {
+.Register_Form{
+    padding-top: 63px;
+
+    .Register {
+        font-size: 42px;
+        padding: 0 10%;
+
+    }
+    .liner {
+        height: 14px;
+        margin: -30px 0 0 calc(3px + 10%);
+    }
+    @keyframes drawLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 170px;
+    }
+    }
+    .h2_wrap{
+        display: flex;
+        justify-content: flex-start;
+        opacity: 0;
+        margin: 25px 0 40px 0;
+        transform: translateX(-100%);
+        animation: slideIn 0.5s forwards 0.5s;
+
+        h2 {
+            width: 100px;
+            padding: 12px 20px;
+            padding-right: 50px;
+            padding-left: 100px;
+            font-size: 12px;
+        }
+    }  
+    @keyframes slideIn {
+        to {
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+    .main{
+        padding: 0 5% 50px 5%;
+
+        form{
+            
+            .reqire_text{
+                margin-top: -20px;
+            }
+
+            .reqire_text,.error_message{
+                font-size: 14px;
+                width: 100%;
+                text-align: left;
+            }
+            .wrap{
+                width: 100%;
+
+                .inner_wrap{
+                    width: 100%;
+
+                    label{
+                        width: 100%;
+                        display: block;
+                    }
+                    input{
+                        width: 89%;
+                    }
+                }
+            }
+            input[type='checkbox']{
+                width: 30px;
+            }
+            .terms_service{
+                height: 250px;
+                padding: 15px 25px;
+                font-size: 14px;
+
+                h1{
+                    font-size: 25px;
+                }
+                h2{
+                    font-size: 20px;
+                }
+             }
+            button{
+                margin: 20px 0;
+                width: 250px;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+.terms{
+    font-weight: 600;
+    margin-top: 30px;
+}
+}
+
+.Form_check {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.Form_check .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    width: 400px;
+    text-align: center;
+}
+
+.Form_check h3 {
+    font-family: 'Audiowide', sans-serif;
+    margin-top: 0;
+}
+
+.Form_check .input div {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.Form_check button#Not_correct {
+    text-align: center;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 15px;
+    background-color:#e6e6e6;
+    width: 100px;
+    height: 50px;
+}
+
+.Form_check button#Not_correct:hover {
+    background-color: #ccc;
+}
+
+.cfm_button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.Form_check button#confirmButton {
+    text-align: center;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 15px;
+    background-color: #ccc;
+    width: 100px;
+    height: 50px;
+}
+
+.Form_check button#confirmButton:hover {
+    background-color: #00CED1;
+    color: white;
+}
+

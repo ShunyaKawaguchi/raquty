@@ -1,0 +1,58 @@
+.main{
+    height: 100vh;
+    font-family: Audiowide;
+}
+//pc
+@media screen and (min-width: 960px){
+    .main{
+        padding-top: 63px;
+        .menu{
+            height: 20px;
+            display: block;
+            border: #000;
+            margin-left: 20px;
+        }
+    }
+}
+//ipad min~air
+@media screen and (max-width: 959px) and (min-width: 440px){
+    .main{
+        padding-top: 63px;
+        .menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: #000;
+            margin-left: 20px;
+            
+        }
+    }
+}
+//smartphone
+@media screen and (max-width: 439px){
+    .main{
+        padding-top: 63px;
+        .menu{
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90vw;
+            margin-left: 5vw;
+            margin-bottom: 2vh;
+            padding: 5vh 0 ;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .menu:hover{
+            background-color: #555;
+        }
+        .menu:active{
+            background-color: #555;
+        }
+    }
+}

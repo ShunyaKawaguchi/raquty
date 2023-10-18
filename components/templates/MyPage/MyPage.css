@@ -1,0 +1,236 @@
+.MyPage {
+  font-family: Audiowide;
+}
+
+.MyPage .title {
+  position: relative;
+  text-align: left;
+  color: #000;
+  font-weight: 400;
+  z-index: 999;
+  margin-top: 30px;
+}
+
+.MyPage .liner {
+  position: relative;
+  width: 0px;
+  background-color: #EDFF6F;
+  z-index: 998;
+  animation: drawLine 1.5s ease-out forwards;
+}
+
+@media print, screen and (min-width: 960px) {
+  .MyPage {
+    padding-top: 83px;
+    padding-bottom: 50px;
+  }
+  .MyPage .title {
+    font-size: 45px;
+    padding: 0 10%;
+  }
+  .MyPage .liner {
+    height: 17px;
+    margin: -37px 0 37px calc(5px + 10%);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 195px;
+    }
+  }
+  .MyPage .main {
+    margin: 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .MyPage .main .welcome {
+    width: 80%;
+    text-align: left;
+  }
+  .MyPage .main .menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    z-index: 999;
+  }
+  .MyPage .main .menu .menu_title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+  }
+  .MyPage .main .menu .menu_wrap {
+    width: 100%;
+  }
+  .MyPage .main .menu .menu_wrap .single_menu {
+    width: calc(100% -20px);
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    border: 0.5px solid #ccc;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s;
+    font-family: Inter;
+  }
+  .MyPage .main .menu .menu_wrap .single_menu:hover {
+    background-color: #ccc;
+  }
+  .MyPage .gif_wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .MyPage .gif_wrap .tennis-gif {
+    z-index: 99;
+    margin-top: -60px;
+    width: 30%;
+  }
+}
+
+@media print, screen and (max-width: 959px) and (min-width: 440px) {
+  .MyPage {
+    padding-top: 83px;
+    padding-bottom: 50px;
+  }
+  .MyPage .title {
+    font-size: 45px;
+    padding: 0 10%;
+  }
+  .MyPage .liner {
+    height: 17px;
+    margin: -37px 0 37px calc(5px + 10%);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 195px;
+    }
+  }
+  .MyPage .main {
+    margin: 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .MyPage .main .welcome {
+    width: 100%;
+    text-align: left;
+  }
+  .MyPage .main .menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 999;
+  }
+  .MyPage .main .menu .menu_title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+  }
+  .MyPage .main .menu .menu_wrap {
+    width: 100%;
+  }
+  .MyPage .main .menu .menu_wrap .single_menu {
+    width: calc(100% -20px);
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    border: 0.5px solid #ccc;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s;
+    font-family: Inter;
+  }
+  .MyPage .main .menu .menu_wrap .single_menu:hover {
+    background-color: #ccc;
+  }
+  .MyPage .gif_wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .MyPage .gif_wrap .tennis-gif {
+    z-index: 99;
+    margin-top: -30px;
+    width: 50%;
+  }
+}
+
+@media print, screen and (max-width: 439px) {
+  .MyPage {
+    padding-top: 63px;
+    padding-bottom: 50px;
+  }
+  .MyPage .title {
+    font-size: 30px;
+    padding: 0 5%;
+  }
+  .MyPage .liner {
+    height: 12px;
+    margin: -25px 0 37px calc(5px + 5%);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 127px;
+    }
+  }
+  .MyPage .main {
+    margin: 25px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .MyPage .main .welcome {
+    width: 100%;
+    text-align: left;
+  }
+  .MyPage .main .menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 999;
+  }
+  .MyPage .main .menu .menu_title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+  }
+  .MyPage .main .menu .menu_wrap {
+    width: 100%;
+  }
+  .MyPage .main .menu .menu_wrap .single_menu {
+    width: calc(100% -20px);
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    border: 0.5px solid #ccc;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s;
+    font-family: Inter;
+  }
+  .MyPage .main .menu .menu_wrap .single_menu:hover {
+    background-color: #ccc;
+  }
+  .MyPage .gif_wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .MyPage .gif_wrap .tennis-gif {
+    z-index: 99;
+    margin-top: -10px;
+    width: 70%;
+  }
+}

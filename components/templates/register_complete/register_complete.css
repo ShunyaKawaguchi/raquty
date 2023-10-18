@@ -1,0 +1,247 @@
+.Register_Cmp {
+  text-align: center;
+  background-color: #e6e6e6;
+}
+
+.Register_Cmp .raquty {
+  position: relative;
+  text-align: left;
+  color: #000;
+  font-family: Audiowide;
+  font-weight: 400;
+  z-index: 999;
+  margin-top: 30px;
+}
+
+.Register_Cmp .liner {
+  position: relative;
+  width: 0px;
+  background-color: #EDFF6F;
+  z-index: 998;
+  animation: drawLine 1.5s ease-out forwards;
+}
+
+.Register_Cmp h2 {
+  background-color: #000;
+  text-align: right;
+  color: white;
+  font-family: Audiowide;
+  border-radius: 0 25px 25px 0;
+}
+
+@media print, screen and (min-width: 960px) {
+  .Register_Cmp {
+    padding-top: 83px;
+  }
+  .Register_Cmp .raquty {
+    font-size: 57px;
+    padding: 0 10%;
+  }
+  .Register_Cmp .liner {
+    height: 17px;
+    margin: -40px 0 37px calc(10% + 5px);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 207px;
+    }
+  }
+  .Register_Cmp .h2_wrap {
+    display: flex;
+    justify-content: flex-start;
+    opacity: 0;
+    margin: 30px 0;
+    transform: translateX(-100%);
+    animation: slideIn 0.5s forwards 0.5s;
+  }
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .Register_Cmp h2 {
+    width: 250px;
+    padding: 12px 20px;
+    padding-right: 100px;
+    font-size: 16px;
+  }
+  .Register_Cmp .main {
+    display: flex;
+    justify-content: center;
+  }
+  .Register_Cmp .main .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 400px;
+    padding: 40px;
+    border: 1.5px solid #000;
+  }
+  .Register_Cmp .main .wrap .Msg, .Register_Cmp .main .wrap .Msg_2, .Register_Cmp .main .wrap .Msg_3 {
+    width: 100%;
+  }
+  .Register_Cmp .main .wrap button {
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    background-color: #EE8F00;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 300px;
+    margin: 20px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 959px) and (min-width: 440px) {
+  .Register_Cmp {
+    padding-top: 83px;
+  }
+  .Register_Cmp .raquty {
+    font-size: 47px;
+    padding: 0 10%;
+  }
+  .Register_Cmp .liner {
+    height: 14px;
+    margin: -35px 0 37px calc(10% + 5px);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 165px;
+    }
+  }
+  .Register_Cmp .h2_wrap {
+    display: flex;
+    justify-content: flex-start;
+    opacity: 0;
+    margin: 30px 0;
+    transform: translateX(-100%);
+    animation: slideIn 0.5s forwards 0.5s;
+  }
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .Register_Cmp h2 {
+    width: 250px;
+    padding: 12px 20px;
+    padding-right: 100px;
+    font-size: 16px;
+  }
+  .Register_Cmp .main {
+    display: flex;
+    justify-content: center;
+  }
+  .Register_Cmp .main .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 100px;
+    padding: 40px;
+    border: 1.5px solid #000;
+  }
+  .Register_Cmp .main .wrap .Msg, .Register_Cmp .main .wrap .Msg_2, .Register_Cmp .main .wrap .Msg_3 {
+    width: 100%;
+  }
+  .Register_Cmp .main .wrap button {
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    background-color: #EE8F00;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 300px;
+    margin: 20px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 439px) {
+  .Register_Cmp {
+    padding-top: 63px;
+  }
+  .Register_Cmp .raquty {
+    font-size: 42px;
+    padding: 0 10%;
+  }
+  .Register_Cmp .liner {
+    height: 14px;
+    margin: -30px 0 0 calc(3px + 10%);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 153px;
+    }
+  }
+  .Register_Cmp .h2_wrap {
+    display: flex;
+    justify-content: flex-start;
+    opacity: 0;
+    margin: 25px 0 40px 0;
+    transform: translateX(-100%);
+    animation: slideIn 0.5s forwards 0.5s;
+  }
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .Register_Cmp h2 {
+    width: 150px;
+    padding: 12px 20px;
+    padding-right: 50px;
+    padding-left: 100px;
+    font-size: 16px;
+  }
+  .Register_Cmp .main {
+    display: flex;
+    justify-content: center;
+  }
+  .Register_Cmp .main .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px 10px;
+    border: 1.5px solid #000;
+  }
+  .Register_Cmp .main .wrap .Msg, .Register_Cmp .main .wrap .Msg_2, .Register_Cmp .main .wrap .Msg_3 {
+    width: 100%;
+    font-size: 12px;
+  }
+  .Register_Cmp .main .wrap button {
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    background-color: #EE8F00;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 300px;
+    margin: 20px;
+    border: none;
+  }
+}
+
+@page {
+  margin: 0mm 5mm;
+  size: A4 portrait;
+}

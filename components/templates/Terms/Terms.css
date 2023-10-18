@@ -1,0 +1,152 @@
+.Terms {
+  font-family: Audiowide;
+}
+
+.Terms .title {
+  position: relative;
+  text-align: left;
+  color: #000;
+  font-weight: 400;
+  z-index: 999;
+  margin-top: 30px;
+}
+
+.Terms .liner {
+  position: relative;
+  width: 0px;
+  background-color: #EDFF6F;
+  z-index: 998;
+  animation: drawLine 1.5s ease-out forwards;
+}
+
+.Terms .main {
+  font-family: Inter;
+}
+
+@media screen and (min-width: 960px) {
+  .Terms {
+    padding: 83px 20% 50px 20%;
+    background-color: #e6e6e6;
+  }
+  .Terms .title {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .Terms .liner {
+    height: 20px;
+    margin: -46px 0 37px 0;
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 200px;
+    }
+  }
+  .Terms .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Terms .main h2 {
+    width: auto;
+    border-bottom: 1px solid #000;
+  }
+  .Terms .main p {
+    font-size: 14px;
+  }
+  .Terms .main li {
+    font-size: 15px;
+    margin: 3px 0;
+  }
+}
+
+@media print, screen and (max-width: 959px) and (min-width: 440px) {
+  .Terms {
+    padding: 83px 10% 50px 10%;
+    background-color: #e6e6e6;
+  }
+  .Terms .title {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .Terms .liner {
+    height: 20px;
+    margin: -46px 0 37px 0;
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 200px;
+    }
+  }
+  .Terms .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Terms .main h2 {
+    width: auto;
+    border-bottom: 1px solid #000;
+  }
+  .Terms .main p {
+    font-size: 14px;
+  }
+  .Terms .main li {
+    font-size: 15px;
+    margin: 3px 0;
+  }
+}
+
+@media screen and (max-width: 439px) {
+  .Terms {
+    padding: 63px 5% 50px 5%;
+  }
+  .Terms .title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .Terms .liner {
+    height: 12px;
+    margin: -26px 0 0 0;
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 120px;
+    }
+  }
+  .Terms .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Terms .main h2 {
+    width: auto;
+    border-bottom: 1px solid #000;
+  }
+  .Terms .main p {
+    font-size: 14px;
+    margin: 30px 0;
+  }
+  .Terms .main li {
+    font-size: 15px;
+    margin: 3px 0;
+  }
+}
+
+@media print {
+  .Terms {
+    background-color: white;
+  }
+}
+
+@page {
+  margin: 0mm 5mm;
+  size: A4 portrait;
+}
