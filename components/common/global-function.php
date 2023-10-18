@@ -288,7 +288,7 @@ function add_log($user_id, $log_action , $event_id , $log_before, $log_after) {
     }
 }
 
-//種目情報取得関数
+//種目の情報取得関数
 function get_event_data($event_id) {
     $sql = "SELECT * FROM event_list WHERE event_id = ?";
     global $cms_access; 
