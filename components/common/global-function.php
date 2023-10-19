@@ -55,7 +55,7 @@ function get_tournament_data( $tournament_id ){
     return $row; //post_dataを配列で返す
 }
 
-//大会名称をエコーする
+//大会名称を返す
 function tournament_name( $tournament_id ){
     $sql = "SELECT * FROM tournament WHERE tournament_id = ?";
     global $cms_access; 
