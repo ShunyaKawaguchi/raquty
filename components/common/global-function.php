@@ -66,7 +66,7 @@ function tournament_name( $tournament_id ){
     $row = $result->fetch_assoc();
     $stmt->close();
 
-    echo $row['tournament_name'];
+    return $row['tournament_name'];
 }
 
 //記事の投稿日時の加工関数
