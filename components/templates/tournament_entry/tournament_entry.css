@@ -288,6 +288,10 @@
     text-align: center;
     padding: 50px 20px 0 20px;
   }
+  .Tournament_Entry .Msg .icon {
+    display: flex;
+    justify-content: center;
+  }
   .Tournament_Entry .Msg .icon .fas {
     font-size: 40px;
     padding: 10px 0;
@@ -470,6 +474,10 @@
     margin: 0 10%;
     text-align: center;
     padding: 40px 20px 0 20px;
+  }
+  .Tournament_Entry .Msg .icon {
+    display: flex;
+    justify-content: center;
   }
   .Tournament_Entry .Msg .icon .fas {
     font-size: 40px;
@@ -690,8 +698,12 @@
     text-align: center;
     padding: 30px 20px 0 20px;
   }
+  .Tournament_Entry .Msg .icon {
+    display: flex;
+    justify-content: center;
+  }
   .Tournament_Entry .Msg .icon .fas {
-    font-size: 30px;
+    font-size: 40px;
     padding: 10px 0;
   }
   .Tournament_Entry .Msg .txt_msg {
