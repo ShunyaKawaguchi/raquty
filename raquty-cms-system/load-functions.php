@@ -39,7 +39,7 @@ function tournament_load( $tournament_id ){
         $row = $result->fetch_assoc();
         $stmt->close();
             if ($row) {
-                // 投稿が存在する場合
+                // 大会が存在する場合
                return true;
             }else{
                 // 行が存在しない場合→404

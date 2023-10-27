@@ -1,0 +1,249 @@
+.Draw{
+    font-family: Audiowide;
+
+    .title{
+        position: relative;
+        text-align: left;
+        color: #000;
+        font-weight: 400;
+        z-index: 999;
+        margin-top: 30px;
+    }
+    .liner {
+        position: relative;
+        width: 0px;
+        background-color: #EDFF6F;
+        z-index: 998;
+        animation: drawLine 1.5s ease-out forwards;
+    }
+    a{
+        color: blue;
+    }
+    a:hover{
+        border-bottom: 1px solid blue;
+    }
+
+}
+
+@media print,screen and (min-width: 960px) {
+.Draw{
+    padding-top: 83px;
+    padding-bottom: 50px;
+
+    .title{
+        font-size: 57px;
+        padding: 0 10%;
+    }
+    .liner {
+        height: 17px;
+        margin: -45px 0 37px calc(5px + 10%);
+    }
+    @keyframes drawLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 160px;
+    }
+    }
+    .main{
+        margin: 50px 10% 25px 10%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .tournament_name{
+            font-family: Inter;
+            width: 100%;
+            font-size: 18px;
+            padding: 15px 0;
+        }
+        .Listing{
+            border: 1px solid #000;
+            width: calc(100% - 20px);
+            padding: 10px;
+
+            .Event{
+                width: calc(100% - 20px);
+                margin:10px;
+                font-family: Inter;
+                
+                .Name{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        } 
+        .submit_wrap{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+    
+            .next{
+                cursor: pointer;
+                color: white;
+                font-weight: 600;
+                background-color: #EE8F00;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                font-size: 18px;
+                padding: 10px 30px;
+                border-radius: 20px;
+                width: 300px;
+                margin-top: 20px;
+                border: none;
+            }
+        }  
+    }
+}
+}
+@media screen and (max-width: 959px) and (min-width: 440px) {
+.Draw{
+    padding-top: 83px;
+    padding-bottom: 50px;
+
+    .title{
+        font-size: 57px;
+        padding: 0 10%;
+    }
+    .liner {
+        height: 17px;
+        margin: -45px 0 37px calc(5px + 10%);
+    }
+    @keyframes drawLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 160px;
+    }
+    }
+    .main{
+        margin: 50px 10% 25px 10%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .tournament_name{
+            font-family: Inter;
+            width: 100%;
+            font-size: 18px;
+            padding: 15px 0;
+        }
+        .Listing{
+            border: 1px solid #000;
+            width: calc(100% - 20px);
+            padding: 10px;
+
+            .Event{
+                width: calc(100% - 20px);
+                margin:10px;
+                font-family: Inter;
+                
+                .Name{
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        } 
+        .submit_wrap{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+    
+            .next{
+                cursor: pointer;
+                color: white;
+                font-weight: 600;
+                background-color: #EE8F00;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                font-size: 18px;
+                padding: 10px 30px;
+                border-radius: 20px;
+                width: 300px;
+                margin-top: 20px;
+                border: none;
+            }
+        }  
+    }
+}
+}
+
+@media screen and (max-width: 439px) {
+.Draw{
+    padding-top: 63px;
+    padding-bottom: 25px;
+
+    .title{
+        font-size: 40px;
+        padding: 0 5%;
+    }
+    .liner {
+        height: 17px;
+        margin: -35px 0 20px calc(5px + 5%);
+    }
+    @keyframes drawLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 110px;
+    }
+    }
+    .main{
+        margin: 0 2.5% 25px 2.5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .tournament_name{
+            font-family: Inter;
+            width: 100%;
+            font-size: 18px;
+            padding: 30px 2.5%;
+        }
+        .Listing{
+            border: 1px solid #000;
+            width: calc(100% - 10px);
+            padding: 10px 5px;
+
+            .Event{
+                width: calc(100% - 10px);
+                margin:10px 5px;
+                font-family: Inter;
+                
+                .Name{
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        } 
+        .submit_wrap{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+    
+            .next{
+                cursor: pointer;
+                color: white;
+                font-weight: 600;
+                background-color: #EE8F00;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                font-size: 18px;
+                padding: 10px 30px;
+                border-radius: 20px;
+                width: 300px;
+                margin-top: 20px;
+                border: none;
+            }
+        }  
+    }
+}
+}
+
+@page {
+	margin: 0mm 5mm;
+	size: A4 portrait; //横の場合はlandscape
+}

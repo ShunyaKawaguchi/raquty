@@ -6,6 +6,8 @@ function title_settings($post_data) {
         $title = 'トピックス一覧:' . tournament_name($_GET['tournament_id']);
     } elseif (isset($post_data['template']) && $post_data['template'] == 'tournament_Entry_List') {
         $title = 'エントリーリスト:' . tournament_name($_GET['tournament_id']);
+    } elseif (isset($post_data['template']) && $post_data['template'] == 'tournament_draw') {
+        $title = 'ドロー:' . tournament_name($_GET['tournament_id']);
     } else {
         $title = $post_data['post_title'];
     }

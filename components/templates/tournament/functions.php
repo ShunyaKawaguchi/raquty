@@ -152,7 +152,11 @@ function document_view( $tournament_id ){
         <?php else: ?>
             <a class="box" href="https://manage.raquty.com/<?php echo $timetable_path['document_path'];?>" style="background-color:#2D9AFF;" target="_blank">日程表</a>  
         <?php endif; ?>
-        <div class="box" id="Document_None">ドロー</div>
+        <?php if(get_draw_status($tournament_id)):?>
+            <a class="box" style="background-color:#2D9AFF;" href="<?php echo home_url('Tournament/Draw?tournament_id=').$tournament_id;?>">ドロー</a>
+        <?php else:?>
+            <a class="box" href="<?php echo home_url('Tournament/Draw?tournament_id=').$tournament_id;?>">ドロー</a>
+        <?php endif;?>
         <div class="box_1" id="Document_None">大会<br>結果</div>
     </div>
 <?php }
@@ -173,6 +177,22 @@ function get_document_path_return($tournament_id , $document_type = ''){
         return false;
     }
 }
+
+//ドローが公開されているのか確認
+function get_draw_status($tournament_id) {
+    $sql = "SELECT COUNT(*) FROM child_event_list WHERE tournament_id = ? AND status = ?";
+    $status = 1;
+    global $cms_access;
+    $stmt = $cms_access->prepare($sql);
+    $stmt->bind_param("ii", $tournament_id, $status);
+    $stmt->execute();
+    $stmt->bind_result($count);
+    $stmt->fetch();
+    $stmt->close();
+
+    return $count > 0;
+}
+
 
 //トピックス
 function topics_view( $tournament_id ){ ?>
@@ -327,22 +347,6 @@ function get_tournament_event_data($tournament_id) {
             $event_data = get_single_tournament_event($row['event_id']); ?>
             <div class="about_value" id="event">・<?php echo $event_data['event_name'] ?><br>（定員：<?php echo $event_data['capacity'] ?>名 / 料金：<?php echo $event_data['fee'] ?>円）</div>
     <?php }
-    }
-}
-
-//各種目情報をevent_idから取得
-function get_single_tournament_event($event_id) {
-    $sql = "SELECT * FROM event_list WHERE event_id = ?";
-    global $cms_access; 
-    $stmt = $cms_access->prepare($sql);
-    $stmt->bind_param("i", $event_id); 
-    $stmt->execute();
-    $result = $stmt->get_result();
-    $stmt->close();
-
-    if ($result->num_rows === 1) {
-        $row = $result->fetch_assoc();
-        return $row; 
     }
 }
 

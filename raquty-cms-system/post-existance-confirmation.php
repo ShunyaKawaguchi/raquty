@@ -52,6 +52,15 @@ if ($row) {
                 $post_data = get_post_data( 2 );
                 $template = $post_data['template'];
             }
+        }elseif( $row['template']== 'tournament_draw'){
+            //大会が存在すればOKなので、tournament_load関数を利用
+            if(tournament_load( $_GET['tournament_id'] )){
+                $post_data = get_post_data( $row['post_id'] );
+                $template = 'tournament_draw';
+            }else{
+                $post_data = get_post_data( 2 );
+                $template = $post_data['template'];
+            }
         }else{
             //ノーマルな固定ページを表示
             $post_id = $row['post_id'];

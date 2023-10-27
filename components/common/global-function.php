@@ -55,7 +55,7 @@ function get_tournament_data( $tournament_id ){
     return $row; //post_dataを配列で返す
 }
 
-//大会名称を返す
+//大会名称をエコーする
 function tournament_name( $tournament_id ){
     $sql = "SELECT * FROM tournament WHERE tournament_id = ?";
     global $cms_access; 
@@ -306,3 +306,18 @@ function get_event_data($event_id) {
     }
 }
 
+//各種目情報をevent_idから取得
+function get_single_tournament_event($event_id) {
+    $sql = "SELECT * FROM event_list WHERE event_id = ?";
+    global $cms_access; 
+    $stmt = $cms_access->prepare($sql);
+    $stmt->bind_param("i", $event_id); 
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $stmt->close();
+
+    if ($result->num_rows === 1) {
+        $row = $result->fetch_assoc();
+        return $row; 
+    }
+}
