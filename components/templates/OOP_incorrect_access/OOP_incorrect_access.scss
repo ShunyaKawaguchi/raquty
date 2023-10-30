@@ -1,0 +1,60 @@
+.main{
+    // justify-content: center;
+    // align-items: center;
+    height: 100vh;
+    padding-top: 63px;
+    .content{
+        color: red;
+        font-weight: bold;
+        margin: 0 5vw;
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+        display: block;
+    }
+    .link{
+        margin: 0 5vw;
+        display: block;
+    }
+}
+.main h1{
+    font-size: 100px;
+}
+//pc
+@media screen and (min-width: 960px){
+    .main{
+        padding-top: 63px;
+        a{
+            font-family: Audiowide;
+            height: 20px;
+            display: block;
+            border: #000;
+            margin-left: 20px;
+        }
+    }
+}
+//ipad min~air
+@media screen and (max-width: 959px) and (min-width: 440px){
+    .main{
+        padding-top: 63px;
+        a{
+            font-family: Audiowide;
+            height: 20px;
+            display: block;
+            border: #000;
+            margin-left: 20px;
+        }
+    }
+}
+//smartphone
+@media screen and (max-width: 439px){
+    .main{
+        padding-top: 63px;
+        a{
+            font-family: Audiowide;
+            height: 20px;
+            display: block;
+            border: #000;
+            margin-left: 20px;
+        }
+    }
+}

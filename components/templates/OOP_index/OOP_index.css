@@ -1,35 +1,41 @@
 .main {
-  height: 100vh;
   font-family: Audiowide;
+}
+.main .about_raquty_title {
+  position: relative;
+  text-align: left;
+  color: #000;
+  font-weight: 400;
+  z-index: 999;
+  margin-top: 30px;
+}
+.main .liner {
+  position: relative;
+  width: 0px;
+  background-color: #EDFF6F;
+  z-index: 998;
+  animation: drawLine 1.5s ease-out forwards;
 }
 
 @media screen and (min-width: 960px) {
   .main {
     padding-top: 63px;
   }
-  .main .menu {
-    height: 20px;
-    display: block;
-    border: #000;
-    margin-left: 20px;
+  .main .about_raquty_title {
+    font-size: 45px;
+    padding: 0 10%;
   }
-}
-@media screen and (max-width: 959px) and (min-width: 440px) {
-  .main {
-    padding-top: 63px;
+  .main .liner {
+    height: 17px;
+    margin: -40px 0 37px calc(5px + 10%);
   }
-  .main .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: #000;
-    margin-left: 20px;
-  }
-}
-@media screen and (max-width: 439px) {
-  .main {
-    padding-top: 63px;
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 163px;
+    }
   }
   .main .menu {
     border: 1px solid #000;
@@ -47,9 +53,96 @@
     height: auto;
   }
   .main .menu:hover {
-    background-color: #555;
+    background-color: #aaa;
+    cursor: pointer;
   }
   .main .menu:active {
-    background-color: #555;
+    background-color: #aaa;
+  }
+}
+@media screen and (max-width: 959px) and (min-width: 440px) {
+  .main {
+    padding-top: 63px;
+  }
+  .main .about_raquty_title {
+    font-size: 45px;
+    padding: 0 10%;
+  }
+  .main .liner {
+    height: 17px;
+    margin: -40px 0 37px calc(5px + 10%);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 163px;
+    }
+  }
+  .main .menu {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+    padding: 5vh 0;
+  }
+  .main .menu img {
+    max-width: 100%;
+    height: auto;
+  }
+  .main .menu:hover {
+    background-color: #aaa;
+    cursor: pointer;
+  }
+  .main .menu:active {
+    background-color: #aaa;
+  }
+}
+@media screen and (max-width: 439px) {
+  .main {
+    padding-top: 63px;
+  }
+  .main .about_raquty_title {
+    font-size: 30px;
+    padding: 0 10%;
+  }
+  .main .liner {
+    height: 12px;
+    margin: -25px 0 37px calc(5px + 10%);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 105px;
+    }
+  }
+  .main .menu {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+    padding: 5vh 0;
+  }
+  .main .menu img {
+    max-width: 100%;
+    height: auto;
+  }
+  .main .menu:hover {
+    background-color: #aaa;
+    cursor: pointer;
+  }
+  .main .menu:active {
+    background-color: #aaa;
   }
 }/*# sourceMappingURL=OOP_index.css.map */

@@ -1,38 +1,42 @@
 .main{
-    height: 100vh;
     font-family: Audiowide;
+    .about_raquty_title{
+        position: relative;
+        text-align: left;
+        color: #000;
+        font-weight: 400;
+        z-index: 999;
+        margin-top: 30px;
+    }
+    .liner {
+        position: relative;
+        width: 0px;
+        background-color: #EDFF6F;
+        z-index: 998;
+        animation: drawLine 1.5s ease-out forwards;
+    }
 }
+
 //pc
 @media screen and (min-width: 960px){
     .main{
         padding-top: 63px;
-        .menu{
-            height: 20px;
-            display: block;
-            border: #000;
-            margin-left: 20px;
+        .about_raquty_title{
+            font-size: 45px;
+            padding: 0 10%;
+        }
+        .liner {
+            height: 17px;
+            margin: -40px 0 37px calc(5px + 10%);
+        }
+        @keyframes drawLine {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 163px;
         }
     }
-}
-//ipad min~air
-@media screen and (max-width: 959px) and (min-width: 440px){
-    .main{
-        padding-top: 63px;
-        .menu{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            border: #000;
-            margin-left: 20px;
-            
-        }
-    }
-}
-//smartphone
-@media screen and (max-width: 439px){
-    .main{
-        padding-top: 63px;
         .menu{
             border: 1px solid #000;
             display: flex;
@@ -49,10 +53,101 @@
             }
         }
         .menu:hover{
-            background-color: #555;
+            background-color: #aaa;
+            cursor: pointer;
         }
         .menu:active{
-            background-color: #555;
+            background-color: #aaa;
+        }
+    }
+}
+//ipad min~air
+@media screen and (max-width: 959px) and (min-width: 440px){
+    .main{
+        padding-top: 63px;
+        .about_raquty_title{
+            font-size: 45px;
+            padding: 0 10%;
+        }
+        .liner {
+            height: 17px;
+            margin: -40px 0 37px calc(5px + 10%);
+        }
+        @keyframes drawLine {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 163px;
+        }
+    }
+        .menu{
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90vw;
+            margin-left: 5vw;
+            margin-bottom: 2vh;
+            padding: 5vh 0 ;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .menu:hover{
+            background-color: #aaa;
+            cursor: pointer;
+        }
+        .menu:active{
+            background-color: #aaa;
+        }
+    }
+}
+//smartphone
+@media screen and (max-width: 439px){
+    .main{
+        padding-top: 63px;
+        .about_raquty_title {
+            font-size: 30px;
+            padding: 0 10%;
+            }
+            
+            .liner {
+            height: 12px;
+            margin: -25px 0 37px calc(5px + 10%);
+            }
+        
+            @keyframes drawLine {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 105px;
+            }
+        }
+        .menu{
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 90vw;
+            margin-left: 5vw;
+            margin-bottom: 2vh;
+            padding: 5vh 0 ;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .menu:hover{
+            background-color: #aaa;
+            cursor: pointer;
+        }
+        .menu:active{
+            background-color: #aaa;
         }
     }
 }
