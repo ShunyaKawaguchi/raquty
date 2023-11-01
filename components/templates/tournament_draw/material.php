@@ -31,7 +31,7 @@ function get_draw($event_id) {
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()):?>
-            <li><a href=""><?php echo $row['child_event_name']; ?>( Web版 )</a></li>
+            <li><a href="<?=home_url('Tournament/Draw/View?tournament_id=').$_GET['tournament_id'].'&child_event_id='.$row['id'];?>"><?php echo $row['child_event_name']; ?>( Web版 )</a></li>
         <?php endwhile;
     } else {
         echo "<li>まだドローが公開されていません。</li>";

@@ -321,3 +321,20 @@ function get_single_tournament_event($event_id) {
         return $row; 
     }
 }
+
+function get_single_draw($tournament_id , $child_event_id) {
+    $sql = "SELECT * FROM child_event_list WHERE tournament_id = ? AND id = ? AND status = ?";
+    $status = 1;
+    global $cms_access;
+    $stmt = $cms_access->prepare($sql);
+    $stmt->bind_param("iii",$tournament_id, $child_event_id,$status);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $stmt->close();
+
+    if ($result->num_rows === 1) {
+        $row = $result->fetch_assoc();
+        return $row;
+    }else{
+        return null;    }
+}

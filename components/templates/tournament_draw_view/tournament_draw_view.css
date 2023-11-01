@@ -1,0 +1,507 @@
+@charset "UTF-8";
+.Draw {
+  font-family: Audiowide;
+}
+
+.Draw .title {
+  position: relative;
+  text-align: left;
+  color: #000;
+  font-weight: 400;
+  z-index: 999;
+  margin-top: 30px;
+}
+
+.Draw .liner {
+  position: relative;
+  width: 0px;
+  background-color: #EDFF6F;
+  z-index: 998;
+  animation: drawLine 1.5s ease-out forwards;
+}
+
+.Draw a {
+  color: blue;
+}
+
+.Draw a:hover {
+  border-bottom: 1px solid blue;
+}
+
+.Draw .main .tournament_name .wrap {
+  display: flex;
+}
+
+.bottom {
+  border-bottom: 1px solid #000;
+}
+
+.right {
+  border-right: 1px solid #000;
+}
+
+.left {
+  border-left: 1px solid #000;
+}
+
+.main {
+  font-family: Inter;
+}
+
+@media (min-width: 960px) {
+  .Draw {
+    padding-top: 83px;
+    padding-bottom: 50px;
+  }
+  .Draw .title {
+    font-size: 57px;
+    padding: 0 10%;
+  }
+  .Draw .liner {
+    height: 17px;
+    margin: -45px 0 37px calc(5px + 10%);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 160px;
+    }
+  }
+  .Draw .main {
+    margin: 30px 10% 25px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Draw .main .tournament_name {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px 0;
+  }
+  .Draw .main .tournament_name .wrap .name {
+    width: 100px;
+  }
+  .Draw .main .tournament_name .wrap .value {
+    width: calc(100% - 100px);
+  }
+  .Draw .main .Listing {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+  .Draw .main .Listing .tournament {
+    width: calc(100% - 100px);
+    overflow-y: scroll;
+    margin: 30px 50px;
+    margin-right: 0;
+    font-family: Inter;
+  }
+  .Draw .main .Listing .tournament table {
+    border-collapse: collapse;
+    font-size: 12px;
+    table-layout: fixed;
+  }
+  .Draw .main .Listing .tournament table tr, .Draw .main .Listing .tournament table td {
+    width: 75px;
+    height: 30px;
+    margin: 0;
+    padding: 1.5px;
+  }
+  .Draw .main .Listing .tournament table .player_data {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .Draw .main .Listing .tournament table .player_section {
+    width: 300px;
+    display: flex;
+    align-items: center;
+  }
+  .Draw .main .Listing .tournament table .player_section span {
+    margin-right: 10px;
+  }
+  .Draw .main .Listing .tournament table .player_section form input[type='submit'] {
+    font-size: 12px;
+    margin-right: 10px;
+    border: none;
+  }
+  .Draw .main .Listing .RoundRobin {
+    width: calc(100% - 100px);
+    overflow-x: auto;
+    /* 横スクロールを有効にする */
+    margin: 30px 50px;
+    margin-right: 0;
+  }
+  .Draw .main .Listing .RoundRobin table {
+    border-collapse: separate;
+    font-size: 12px;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .Draw .main .Listing .RoundRobin td, .Draw .main .Listing .RoundRobin th {
+    width: 200px;
+    height: 30px;
+    margin: 0;
+    padding: 10px;
+    font-weight: 400;
+    border: 0.5px solid #000;
+    text-align: center;
+    position: relative;
+  }
+  .Draw .main .Listing .RoundRobin .Non {
+    background-color: #F5F5F5;
+  }
+  .Draw .main .Listing .RoundRobin .player_section_wrap {
+    display: table-cell;
+  }
+  .Draw .main .Listing .RoundRobin .player_section_wrap .player_section {
+    display: flex;
+    align-items: center;
+  }
+  .Draw .main .Listing .RoundRobin .player_section_wrap .player_section .player_data {
+    white-space: nowrap;
+    overflow: scroll;
+    display: inline-block;
+  }
+  .Draw .main .Listing .RoundRobin .player_section_wrap .player_section span {
+    display: inline;
+    margin-right: 10px;
+  }
+  .Draw .main .submit_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  .Draw .main .submit_wrap .next {
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    background-color: #EE8F00;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 300px;
+    margin-top: 20px;
+    border: none;
+  }
+}
+
+@media (max-width: 959px) and (min-width: 440px) {
+  .Draw {
+    padding-top: 83px;
+    padding-bottom: 50px;
+  }
+  .Draw .title {
+    font-size: 57px;
+    padding: 0 10%;
+  }
+  .Draw .liner {
+    height: 17px;
+    margin: -45px 0 37px calc(5px + 10%);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 160px;
+    }
+  }
+  .Draw .main {
+    margin: 30px 10% 25px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Draw .main .tournament_name {
+    font-family: Inter;
+    width: 100%;
+    font-size: 15px;
+    padding: 15px 0;
+  }
+  .Draw .main .tournament_name .wrap .name {
+    width: 100px;
+  }
+  .Draw .main .tournament_name .wrap .value {
+    width: calc(100% - 100px);
+  }
+  .Draw .main .Listing {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+  .Draw .main .Listing .tournament {
+    overflow-y: scroll;
+    margin: 30px 10px;
+    margin-right: 0;
+    font-family: Inter;
+  }
+  .Draw .main .Listing .tournament table {
+    border-collapse: collapse;
+    font-size: 12px;
+    table-layout: fixed;
+  }
+  .Draw .main .Listing .tournament table tr, .Draw .main .Listing .tournament table td, .Draw .main .Listing .tournament table th {
+    width: 90px;
+    height: 30px;
+    margin: 0;
+    padding: 1.5px;
+  }
+  .Draw .main .Listing .tournament table .player_data {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .Draw .main .Listing .tournament table .player_section {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
+  }
+  .Draw .main .Listing .tournament table .player_section span {
+    margin-right: 10px;
+  }
+  .Draw .main .Listing .tournament table .player_section form input[type='submit'] {
+    font-size: 12px;
+    margin-right: 10px;
+    border: none;
+  }
+  .Draw .main .Listing .RoundRobin {
+    width: 100%;
+    overflow-x: auto;
+    /* 横スクロールを有効にする */
+    margin: 30px 0;
+    margin-right: 0;
+  }
+  .Draw .main .Listing .RoundRobin table {
+    border-collapse: separate;
+    font-size: 12px;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .Draw .main .Listing .RoundRobin td, .Draw .main .Listing .RoundRobin th {
+    width: 250px;
+    height: 30px;
+    margin: 0;
+    padding: 10px;
+    font-weight: 400;
+    border: 0.5px solid #000;
+    text-align: center;
+    position: relative;
+  }
+  .Draw .main .Listing .RoundRobin .Non {
+    background-color: #F5F5F5;
+  }
+  .Draw .main .Listing .RoundRobin .player_section_wrap {
+    display: table-cell;
+  }
+  .Draw .main .Listing .RoundRobin .player_section_wrap .player_section {
+    display: flex;
+    align-items: center;
+  }
+  .Draw .main .Listing .RoundRobin .player_section_wrap .player_section .player_data {
+    white-space: nowrap;
+    overflow: scroll;
+    display: inline-block;
+  }
+  .Draw .main .Listing .RoundRobin .player_section_wrap .player_section span {
+    display: inline;
+    margin-right: 10px;
+  }
+  .Draw .main .submit_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  .Draw .main .submit_wrap .next {
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    background-color: #EE8F00;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 300px;
+    margin-top: 20px;
+    border: none;
+  }
+}
+
+@media (max-width: 439px) {
+  .Draw {
+    padding-top: 63px;
+    padding-bottom: 25px;
+  }
+  .Draw .title {
+    font-size: 40px;
+    padding: 0 5%;
+  }
+  .Draw .liner {
+    height: 17px;
+    margin: -35px 0 5px calc(5px + 5%);
+  }
+  @keyframes drawLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 110px;
+    }
+  }
+  .Draw .main {
+    margin: 0 2.5% 25px 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Draw .main .tournament_name {
+    font-family: Inter;
+    width: 100%;
+    font-size: 14px;
+    padding: 30px 2.5%;
+  }
+  .Draw .main .tournament_name .wrap .name {
+    width: 100px;
+  }
+  .Draw .main .tournament_name .wrap .value {
+    width: calc(100% - 100px);
+  }
+  .Draw .main .Listing {
+    border-top: 1px solid #000;
+    width: calc(100% - 10px);
+    padding: 10px 5px;
+  }
+  .Draw .main .Listing .tournament {
+    overflow-x: auto;
+    margin: 30px 10px;
+    margin-right: 0;
+    font-family: Inter;
+  }
+  .Draw .main .Listing .tournament table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    table-layout: fixed;
+  }
+  .Draw .main .Listing .tournament table tr, .Draw .main .Listing .tournament table td, .Draw .main .Listing .tournament table th {
+    width: 60px;
+    height: 30px;
+    margin: 0;
+    padding: 1.5px;
+  }
+  .Draw .main .Listing .tournament table th:first-child, .Draw .main .Listing .tournament table td:first-child {
+    width: 200px;
+  }
+  .Draw .main .Listing .tournament table .player_data {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .Draw .main .Listing .tournament table .player_section {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
+  }
+  .Draw .main .Listing .tournament table .player_section span {
+    margin-right: 10px;
+  }
+  .Draw .main .Listing .tournament table .player_section form input[type='submit'] {
+    font-size: 12px;
+    margin-right: 10px;
+    border: none;
+  }
+  .Draw .main .Listing .RoundRobin {
+    width: 100%;
+    overflow-x: auto;
+    /* 横スクロールを有効にする */
+    margin: 30px 0;
+    margin-right: 0;
+    font-weight: 400;
+  }
+  .Draw .main .Listing .RoundRobin table {
+    border-collapse: separate;
+    font-size: 12px;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .Draw .main .Listing .RoundRobin td, .Draw .main .Listing .RoundRobin th {
+    width: 150px;
+    height: 30px;
+    margin: 0;
+    padding: 10px;
+    font-weight: 400;
+    border: 0.5px solid #000;
+    text-align: center;
+    position: relative;
+  }
+  .Draw .main .Listing .RoundRobin .Non {
+    background-color: #F5F5F5;
+  }
+  .Draw .main .Listing .RoundRobin .player_section_wrap {
+    display: table-cell;
+  }
+  .Draw .main .Listing .RoundRobin .player_section_wrap .player_section {
+    display: flex;
+    align-items: center;
+  }
+  .Draw .main .Listing .RoundRobin .player_section_wrap .player_section .player_data {
+    white-space: nowrap;
+    overflow: scroll;
+    display: inline-block;
+  }
+  .Draw .main .Listing .RoundRobin .player_section_wrap .player_section span {
+    display: inline;
+    margin-right: 10px;
+  }
+  .Draw .main .submit_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  .Draw .main .submit_wrap .next {
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    background-color: #EE8F00;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 300px;
+    margin-top: 20px;
+    border: none;
+  }
+}
+
+@page {
+  margin: 0mm 5mm;
+  size: A4 portrait;
+}
+
+@media print {
+  .title, .liner, .submit_wrap, button {
+    display: none;
+  }
+  .Draw {
+    padding-top: 63px;
+  }
+  .main {
+    margin: 0 2.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
