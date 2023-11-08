@@ -3,18 +3,19 @@
 require_once(dirname(__FILE__).'/../../../manage-raquty-cms-system/connect-databese.php');
 // 共通Function(PHP)を読み込み
 require_once(dirname(__FILE__).'/../../../components/common/global-function.php');
-// データベース接続解除
-require_once(dirname(__FILE__).'/../../../manage-raquty-cms-system/disconnect-database.php');
 header("Access-Control-Allow-Origin: *");
 header('Content-Type: application/json');
 
-$tournament_id = isset($_SESSION['tournament_id']) ? $_SESSION['tournament_id'] : null;
+$tournament_id = isset($_GET['tournament_id']) ? $_GET['tournament_id'] : '';
 // クエリパラメータに応じてデータを返す
 $response = array('get_entry_list' => get_entry_list($tournament_id), 'get_event_id' => get_event_id($tournament_id));
 
 // オリジンを設定してCORSを有効にする
 // JSON形式でデータを出力
 echo json_encode($response);
+// データベース接続解除
+require_once(dirname(__FILE__).'/../../../manage-raquty-cms-system/disconnect-database.php');
+
 function get_entry_list($_tournament_id){
     $table_name = $_tournament_id."_entrylist";
     $query = "SELECT * FROM $table_name";

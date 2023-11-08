@@ -2,7 +2,7 @@ $(function () {
     // ...（以前のコードをここに配置）
   
     // APIエンドポイント
-    const apiUrl = 'https://raquty.com/data/functions.php';
+    const apiUrl = 'components/templates/OOP_index/oop_dynamic_data.php';
   
     
 
@@ -29,6 +29,7 @@ $(function () {
         .then(data => {
           const event = new CustomEvent('dynamicDataUpdated',  {detail: data});
           document.dispatchEvent(event);
+          console.log(data);
         })
         .catch(error => {
           console.error('Error fetching data:', error);

@@ -1,5 +1,6 @@
 .main {
   font-family: Audiowide;
+  min-height: 100vh;
 }
 .main .about_raquty_title {
   position: relative;
@@ -16,41 +17,106 @@
   z-index: 998;
   animation: drawLine 1.5s ease-out forwards;
 }
+.main .tennis-gif {
+  width: 100%;
+  margin-top: -50px;
+}
 
 @media screen and (min-width: 960px) {
   .main {
     padding-top: 63px;
   }
   .main .about_raquty_title {
-    font-size: 45px;
+    font-size: 30px;
+    text-align: left;
     padding: 0 10%;
+    padding-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+    display: block;
+    font-size: 50px;
   }
   .main .liner {
-    height: 17px;
+    height: 20px;
     margin: -40px 0 37px calc(5px + 10%);
+  }
+  .main .container {
+    display: flex;
+  }
+  .main .container .box1 {
+    width: 50%;
+  }
+  .main .container .box2 {
+    width: 50%;
+  }
+  .main .box1, .main .box2 {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+  .main .tournament-name {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    background-color: #000;
+    font-size: 30px;
+    padding: 10px 10px;
+    padding-right: 40px;
+    border-radius: 0 9999px 9999px 0;
+    border-bottom: 1px solid #fff;
+  }
+  .main .venue-name {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #000;
+    color: white;
   }
   @keyframes drawLine {
     0% {
       width: 0;
     }
     100% {
-      width: 163px;
+      width: 185px;
     }
   }
+  .main .tennis-gif {
+    width: 40%;
+    margin-top: -120px;
+    padding-top: -30px;
+    margin-left: 30%;
+  }
+  .main .menu-wrap {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
   .main .menu {
+    background-color: #aaa;
     border: 1px solid #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 90vw;
-    margin-left: 5vw;
-    margin-bottom: 2vh;
+    width: 500px;
+    height: 150px;
+    font-size: 25px;
     padding: 5vh 0;
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .main .menu img {
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    height: 100px;
   }
   .main .menu:hover {
     background-color: #aaa;
@@ -65,19 +131,41 @@
     padding-top: 63px;
   }
   .main .about_raquty_title {
-    font-size: 45px;
+    font-size: 30px;
     padding: 0 10%;
   }
   .main .liner {
-    height: 17px;
-    margin: -40px 0 37px calc(5px + 10%);
+    height: 12px;
+    margin: -25px 0 37px calc(5px + 10%);
+  }
+  .main .tournament-name {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    background-color: #000;
+    padding: 10px 10px;
+    padding-right: 20px;
+    max-width: 90%;
+    border-radius: 0 9999px 9999px 0;
+    border-bottom: 1px solid #fff;
+  }
+  .main .venue-name {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+    background-color: #000;
+    color: white;
   }
   @keyframes drawLine {
     0% {
       width: 0;
     }
     100% {
-      width: 163px;
+      width: 105px;
     }
   }
   .main .menu {
@@ -114,6 +202,28 @@
   .main .liner {
     height: 12px;
     margin: -25px 0 37px calc(5px + 10%);
+  }
+  .main .tournament-name {
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    background-color: #000;
+    padding: 10px 10px;
+    padding-right: 20px;
+    max-width: 90%;
+    border-radius: 0 9999px 9999px 0;
+    border-bottom: 1px solid #fff;
+  }
+  .main .venue-name {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+    background-color: #000;
+    color: white;
   }
   @keyframes drawLine {
     0% {
