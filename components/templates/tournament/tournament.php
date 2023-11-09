@@ -9,11 +9,14 @@ $group_data = get_group_data($post_data['group_id']);
 ?>
 
 <div class="tournament">
-    <div class="title">TOURNAMENT</div>
-    <div class="liner"></div>
+    <!-- <div class="title">TOURNAMENT</div>
+    <div class="liner"></div> -->
+    <div class="EyeCatch_smartphone">
+        <?php eyecatch_view();?>
+    </div>
     <div class="top">
-        <div class="namecard_smartphone">
-            <img src="https://iwanuma-tennis-open.com/wp-content/uploads/2022/06/cropped-cropped-%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AD%E3%82%B4%EF%BC%92.png">
+        <div class="namecard">
+            <!-- <img src="https://iwanuma-tennis-open.com/wp-content/uploads/2022/06/cropped-cropped-%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AD%E3%82%B4%EF%BC%92.png"> -->
             <div class="tournament_name">大会名</div>
             <h2 class="tournament_name_value"><?php echo $post_data['tournament_name'] ?></h2>
         </div>
@@ -23,16 +26,10 @@ $group_data = get_group_data($post_data['group_id']);
         <div class="for_today">
             <div class="text">大会当日はこちらから</div>
             <div class="today" onclick="window.location.href = '<?php echo home_url('OOP?tournament_id=').$post_data['tournament_id'] ?>';">大会<br>当日</div>
-        </div>
-        <div class="namecard">
-            <img src="https://iwanuma-tennis-open.com/wp-content/uploads/2022/06/cropped-cropped-%E3%82%B5%E3%82%A4%E3%83%88%E3%83%AD%E3%82%B4%EF%BC%92.png">
-            <div class="tournament_name">大会名</div>
-            <h2 class="tournament_name_value"><?php echo $post_data['tournament_name'] ?></h2>
-        </div>
-        <div class="for_today_smartphone">
-            <div class="text">\大会当日はこちらから/</div>
-            <button onclick="window.location.href = '<?php echo home_url('OOP?tournament_id=').$post_data['tournament_id'] ?>';">大会当日</button>
-        </div>
+        </div>    
+    </div>
+    <div class="EyeCatch">
+        <?php eyecatch_view();?>
     </div>
     <div class="Entry_related">
         <div class="entry_section">
@@ -57,6 +54,10 @@ $group_data = get_group_data($post_data['group_id']);
     </div>
     <div class="document">
         <?php document_view( $post_data['tournament_id'] ) ?>
+        <div class="for_today_smartphone">
+            <div class="text">\大会当日はこちらから/</div>
+            <button onclick="window.location.href = '<?php echo home_url('OOP?tournament_id=').$post_data['tournament_id'] ?>';">大会当日</button>
+        </div>
     </div>
     <div class="schedule">
         <?php tournament_schedule_view( $post_data ) ?>

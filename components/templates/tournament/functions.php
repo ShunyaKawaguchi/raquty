@@ -23,6 +23,17 @@ function tournament_info_view($post_data , $group_data){ ?>
     </div>
 <?php }
 
+//アイキャッチ画像表示
+function eyecatch_view() {
+    $tournament_id = h($_GET['tournament_id']);
+    $eyecatch_path = get_document_path_return($tournament_id , 'eyecatch'); 
+    if(!empty($eyecatch_path)){ ?>
+    <img src="https://manage.raquty.com/<?php echo $eyecatch_path['document_path'];?>" alt="大会アイキャッチ画像">
+<?php
+    }
+}
+
+
 //エントリー条件
 function entry_view( $post_data ){ 
     $before_entry_end = DateTime::createFromFormat('Y-m-d', $post_data['entry_end']);

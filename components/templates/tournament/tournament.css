@@ -3,7 +3,7 @@ button {
 }
 
 #target, #event {
-  line-height: 30px;
+  line-height: 26px;
 }
 
 .Entry_related a {
@@ -40,38 +40,21 @@ button {
   padding-top: 50px;
 }
 
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
   .tournament {
     padding-top: 83px;
   }
-  .tournament .title {
-    font-size: 57px;
-    padding: 0 10%;
-  }
-  .tournament .liner {
-    height: 17px;
-    margin: -45px 0 37px calc(5px + 10%);
-  }
-  @keyframes drawLine {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 460px;
-    }
-  }
   .tournament .top {
-    margin-top: 50px;
-    padding: 30px 12.5%;
+    padding: 0 12.5% 30px 12.5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 50px;
   }
   .tournament .top .info {
     width: 70%;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
   }
   .tournament .top .info .wrap {
     width: 70%;
@@ -135,16 +118,13 @@ button {
   .tournament .top .info .wrap .venue_value .single_venue {
     width: 45%;
   }
-  .tournament .top .for_today_smartphone {
-    display: none;
-  }
   .tournament .top .for_today {
     width: 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
-    margin: 20px 0;
+    margin: 40px 0 20px 0;
   }
   .tournament .top .for_today .text {
     width: 100%;
@@ -165,18 +145,11 @@ button {
     padding: 10px;
     border-radius: 40px;
   }
-  .tournament .top .namecard_smartphone {
-    display: none;
-  }
   .tournament .top .namecard {
     width: 100%;
     background-color: #424242;
-    padding: 25px;
+    padding: 15px 25px;
     border-radius: 25px;
-  }
-  .tournament .top .namecard img {
-    width: 70px;
-    height: 70px;
     margin-bottom: 20px;
   }
   .tournament .top .namecard .tournament_name {
@@ -184,7 +157,7 @@ button {
     display: flex;
     align-items: center;
     width: 50%;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
   }
   .tournament .top .namecard .tournament_name:before {
@@ -207,9 +180,20 @@ button {
     color: white;
     font-weight: 600;
     font-family: Inter;
-    font-size: 35px;
-    padding: 0 20px;
+    font-size: 24px;
+    padding: 0 10px;
     width: 100%;
+  }
+  .tournament .EyeCatch_smartphone {
+    display: none;
+  }
+  .tournament .EyeCatch {
+    padding: 0 12.5%;
+    width: 75%;
+  }
+  .tournament .EyeCatch img {
+    width: 100%;
+    height: auto;
   }
   .tournament .Entry_related {
     display: flex;
@@ -307,6 +291,9 @@ button {
   .tournament .document {
     background-color: #e6e6e6;
     padding-bottom: 80px;
+  }
+  .tournament .document .for_today_smartphone {
+    display: none;
   }
   .tournament .document .h3_wrap {
     width: 100%;
@@ -635,38 +622,22 @@ button {
   }
 }
 
-@media print, screen and (max-width: 959px) and (min-width: 440px) {
+@media (max-width: 959px) and (min-width: 440px) {
   .tournament {
     padding-top: 83px;
   }
-  .tournament .title {
-    font-size: 57px;
-    padding: 0 10%;
-  }
-  .tournament .liner {
-    height: 17px;
-    margin: -45px 0 37px calc(5px + 10%);
-  }
-  @keyframes drawLine {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 460px;
-    }
-  }
   .tournament .top {
-    margin-top: 50px;
-    padding: 30px 8%;
+    padding: 0 8% 30px 8%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
   .tournament .top .info {
     width: 70%;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
   }
   .tournament .top .info .wrap {
     width: 70%;
@@ -731,16 +702,13 @@ button {
   .tournament .top .info .wrap .venue_value .single_venue {
     margin-right: 30px;
   }
-  .tournament .top .for_today_smartphone {
-    display: none;
-  }
   .tournament .top .for_today {
     width: 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
-    margin: 20px 0;
+    margin: 40px 0 20px 0;
   }
   .tournament .top .for_today .text {
     width: 100%;
@@ -761,18 +729,11 @@ button {
     padding: 10px;
     border-radius: 40px;
   }
-  .tournament .top .namecard_smartphone {
-    display: none;
-  }
   .tournament .top .namecard {
     width: 100%;
     background-color: #424242;
-    padding: 25px;
+    padding: 15px 25px;
     border-radius: 25px;
-  }
-  .tournament .top .namecard img {
-    width: 70px;
-    height: 70px;
     margin-bottom: 20px;
   }
   .tournament .top .namecard .tournament_name {
@@ -780,7 +741,7 @@ button {
     display: flex;
     align-items: center;
     width: 50%;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
   }
   .tournament .top .namecard .tournament_name:before {
@@ -803,9 +764,20 @@ button {
     color: white;
     font-weight: 600;
     font-family: Inter;
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
-    padding: 10px 20px;
+    padding: 5px 16px;
+  }
+  .tournament .EyeCatch_smartphone {
+    display: none;
+  }
+  .tournament .EyeCatch {
+    padding: 0 8%;
+    width: 86%;
+  }
+  .tournament .EyeCatch img {
+    width: 100%;
+    height: auto;
   }
   .tournament .Entry_related {
     display: flex;
@@ -902,6 +874,9 @@ button {
   .tournament .document {
     background-color: #e6e6e6;
     padding-bottom: 80px;
+  }
+  .tournament .document .for_today_smartphone {
+    display: none;
   }
   .tournament .document .h3_wrap {
     width: 100%;
@@ -1229,38 +1204,30 @@ button {
   }
 }
 
-@media screen and (max-width: 439px) {
+@media (max-width: 439px) {
   .tournament {
-    padding-top: 63px;
+    padding-top: 0;
   }
-  .tournament .title {
-    font-size: 35px;
-    margin: 30px 40px;
+  .tournament .EyeCatch_smartphone {
+    margin: 0;
+    padding-top: 53px;
   }
-  .tournament .liner {
-    height: 12px;
-    margin: -57px 0 37px calc(5px + 10%);
-  }
-  @keyframes drawLine {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 285px;
-    }
+  .tournament .EyeCatch_smartphone img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -10px;
   }
   .tournament .top {
-    padding: 10px 8%;
-    margin-bottom: 30px;
+    padding: 0 2.5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   .tournament .top .info {
+    margin-top: 40px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 60px;
   }
   .tournament .top .info .wrap {
     width: 100%;
@@ -1281,18 +1248,20 @@ button {
   }
   .tournament .top .info .wrap .date:before, .tournament .top .info .wrap .organizer:before, .tournament .top .info .wrap .venue:before {
     content: "";
-    height: 5px;
-    width: 20%;
+    height: 8px;
+    width: 21.5%;
     background-color: #424242;
     margin-right: 15px;
+    margin-left: 2.5%;
     border-radius: 20px 0 0 20px;
   }
   .tournament .top .info .wrap .date:after, .tournament .top .info .wrap .organizer:after, .tournament .top .info .wrap .venue:after {
     content: "";
-    height: 5px;
-    width: 60%;
+    height: 8px;
+    width: 57.5%;
     background-color: #424242;
     margin-left: 15px;
+    margin-right: 2.5%;
     border-radius: 0 20px 20px 0;
   }
   .tournament .top .info .wrap .date_value, .tournament .top .info .wrap .organizer_value, .tournament .top .info .wrap .venue_value {
@@ -1304,7 +1273,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0 3%;
     padding: 5px 0;
   }
@@ -1315,14 +1284,14 @@ button {
   .tournament .top .info .wrap .organizer_value {
     text-align: left;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
   }
   .tournament .top .info .wrap .venue_value {
     display: flex;
     flex-wrap: wrap;
     justify-self: start;
     margin: 0 3% 30px 3%;
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px 0;
   }
   .tournament .top .info .wrap .venue_value .single_venue {
@@ -1331,48 +1300,14 @@ button {
   .tournament .top .for_today {
     display: none;
   }
-  .tournament .top .for_today_smartphone {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: start;
-    margin: 10px 0;
-  }
-  .tournament .top .for_today_smartphone .text {
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-    height: 25px;
-    margin: 20px 0;
-  }
-  .tournament .top .for_today_smartphone button {
-    font-family: Audiowide;
-    text-align: center;
-    border: none;
-    transition: background-color 0.3s ease-in-out;
-    border-radius: 50px;
-    background-color: #ccc;
-    font-size: 20px;
-    width: 250px;
-    padding: 15px 20px;
-  }
-  .tournament .top .for_today_smartphone button:hover {
-    background-color: #00CED1;
-    color: white;
-  }
-  .tournament .top .namecard_smartphone {
+  .tournament .top .namecard {
     width: 100%;
     background-color: #424242;
-    padding: 25px 15px;
-    border-radius: 25px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    margin-top: 20px;
   }
-  .tournament .top .namecard_smartphone img {
-    width: 45px;
-    height: 45px;
-    margin-bottom: 8px;
-  }
-  .tournament .top .namecard_smartphone .tournament_name {
+  .tournament .top .namecard .tournament_name {
     color: white;
     display: flex;
     align-items: center;
@@ -1380,7 +1315,7 @@ button {
     font-size: 14px;
     font-weight: 600;
   }
-  .tournament .top .namecard_smartphone .tournament_name:before {
+  .tournament .top .namecard .tournament_name:before {
     content: "";
     height: 6px;
     width: 20%;
@@ -1388,7 +1323,7 @@ button {
     margin-right: 15px;
     border-radius: 20px 0 0 20px;
   }
-  .tournament .top .namecard_smartphone .tournament_name:after {
+  .tournament .top .namecard .tournament_name:after {
     content: "";
     height: 6px;
     width: 45%;
@@ -1396,15 +1331,15 @@ button {
     margin-left: 15px;
     border-radius: 0 20px 20px 0;
   }
-  .tournament .top .namecard_smartphone .tournament_name_value {
+  .tournament .top .namecard .tournament_name_value {
     color: white;
-    font-weight: 600;
+    font-weight: 700;
     font-family: Inter;
-    font-size: 18px;
+    font-size: 20px;
     width: 100%;
     padding: 0;
   }
-  .tournament .top .namecard {
+  .tournament .EyeCatch {
     display: none;
   }
   .tournament .Entry_related {
@@ -1478,7 +1413,7 @@ button {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: -70px;
+    margin-top: -100px;
     margin-bottom: 70px;
   }
   .tournament .Entry_related .entry_section_smartphone img {
@@ -1513,6 +1448,36 @@ button {
   .tournament .document {
     background-color: #e6e6e6;
     padding-bottom: 50px;
+  }
+  .tournament .document .for_today_smartphone {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    margin: 20px 0 10px 0;
+  }
+  .tournament .document .for_today_smartphone .text {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    height: 25px;
+    margin: 10px 0 20px 0;
+  }
+  .tournament .document .for_today_smartphone button {
+    font-family: Audiowide;
+    text-align: center;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 50px;
+    background-color: #ccc;
+    font-size: 20px;
+    width: 250px;
+    padding: 15px 20px;
+  }
+  .tournament .document .for_today_smartphone button:hover {
+    background-color: #00CED1;
+    color: white;
   }
   .tournament .document .h3_wrap {
     width: 100%;

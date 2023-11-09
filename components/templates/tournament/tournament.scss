@@ -3,7 +3,7 @@ button{
 }
 
 #target,#event{
-    line-height: 30px
+    line-height: 26px
 }
 
 .Entry_related{
@@ -41,38 +41,37 @@ button{
     }
 }
 
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
     .tournament{
         padding-top: 83px;
 
-        .title{
-            font-size: 57px;
-            padding: 0 10%;
-        }
-        .liner {
-            height: 17px;
-            margin: -45px 0 37px calc(5px + 10%);
-        }
-        @keyframes drawLine {
-        0% {
-            width: 0;
-        }
-        100% {
-            width: 460px;
-        }
-        }
+        // .title{
+        //     font-size: 57px;
+        //     padding: 0 10%;
+        // }
+        // .liner {
+        //     height: 17px;
+        //     margin: -45px 0 37px calc(5px + 10%);
+        // }
+        // @keyframes drawLine {
+        // 0% {
+        //     width: 0;
+        // }
+        // 100% {
+        //     width: 460px;
+        // }
+        // }
         .top{
-            margin-top: 50px;
-            padding: 30px 12.5%;
+            padding: 0 12.5% 30px 12.5%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin-bottom: 50px;
 
             .info{
                 width: 70%;
                 display: flex;
                 flex-wrap: wrap;
+                margin-top: 50px;
 
                 .wrap{
                     width: 70%;
@@ -140,16 +139,13 @@ button{
                     }
                 }
             }
-            .for_today_smartphone{
-                display: none;
-            }
             .for_today{
                 width: 30%;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items:start;
-                margin: 20px 0;
+                margin: 40px 0 20px 0;
 
                 .text{
                     width: 100%;
@@ -171,26 +167,24 @@ button{
                     border-radius: 40px;
                 }
             }
-            .namecard_smartphone{
-                display: none;
-            }
             .namecard{
                 width: 100%;
                 background-color: #424242;
-                padding: 25px;
+                padding: 15px 25px;
                 border-radius: 25px;
+                margin-bottom: 20px;
 
-                img{
-                    width: 70px;
-                    height: 70px;
-                    margin-bottom: 20px;
-                }
+                // img{
+                //     width: 70px;
+                //     height: 70px;
+                //     margin-bottom: 20px;
+                // }
                 .tournament_name{
                     color: white;
                     display: flex;
                     align-items: center;
                     width: 50%;
-                    font-size: 24px;
+                    font-size: 18px;
                     font-weight: 600;
                 }
                 .tournament_name:before{
@@ -214,10 +208,22 @@ button{
                     color: white;
                     font-weight: 600;
                     font-family: Inter;
-                    font-size: 35px;
-                    padding:  0 20px;
+                    font-size: 24px;
+                    padding:  0 10px;
                     width: 100%;
                 }
+            }
+        }
+        .EyeCatch_smartphone{
+            display: none;
+        }
+        .EyeCatch{
+            padding: 0 12.5%;
+            width: 75%;
+
+            img{
+                width: 100%;
+                height: auto;
             }
         }
         .Entry_related{
@@ -326,6 +332,10 @@ button{
         .document{
             background-color: rgb(230, 230, 230);
             padding-bottom: 80px;
+
+            .for_today_smartphone{
+                display: none;
+            }
 
             .h3_wrap{
                 width: 100%;
@@ -681,38 +691,38 @@ button{
     }
 }
 
-@media print,screen and (max-width: 959px) and (min-width: 440px) {
+@media (max-width: 959px) and (min-width: 440px) {
     .tournament{
         padding-top: 83px;
 
-        .title{
-            font-size: 57px;
-            padding: 0 10%;
-        }
-        .liner {
-            height: 17px;
-            margin: -45px 0 37px calc(5px + 10%);
-        }
-        @keyframes drawLine {
-        0% {
-            width: 0;
-        }
-        100% {
-            width: 460px;
-        }
-        }
+        // .title{
+        //     font-size: 57px;
+        //     padding: 0 10%;
+        // }
+        // .liner {
+        //     height: 17px;
+        //     margin: -45px 0 37px calc(5px + 10%);
+        // }
+        // @keyframes drawLine {
+        // 0% {
+        //     width: 0;
+        // }
+        // 100% {
+        //     width: 460px;
+        // }
+        // }
         .top{
-            margin-top: 50px;
-            padding: 30px 8%;
+            padding: 0 8% 30px 8%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            margin-bottom: 50px;
+            margin-bottom: 0;
 
             .info{
                 width: 70%;
                 display: flex;
                 flex-wrap: wrap;
+                margin-top: 30px;
 
                 .wrap{
                     width: 70%;
@@ -781,16 +791,13 @@ button{
                     }
                 }
             }
-            .for_today_smartphone{
-                display: none;
-            }
             .for_today{
                 width: 30%;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items:start;
-                margin: 20px 0;
+                margin: 40px 0 20px 0;
 
                 .text{
                     width: 100%;
@@ -812,26 +819,24 @@ button{
                     border-radius: 40px;
                 }
             }
-            .namecard_smartphone{
-                display: none;
-            }
             .namecard{
                 width: 100%;
                 background-color: #424242;
-                padding: 25px;
+                padding: 15px 25px;
                 border-radius: 25px;
+                margin-bottom: 20px;
 
-                img{
-                    width: 70px;
-                    height: 70px;
-                    margin-bottom: 20px;
-                }
+                // img{
+                //     width: 70px;
+                //     height: 70px;
+                //     margin-bottom: 20px;
+                // }
                 .tournament_name{
                     color: white;
                     display: flex;
                     align-items: center;
                     width: 50%;
-                    font-size: 20px;
+                    font-size: 16px;
                     font-weight: 600;
                 }
                 .tournament_name:before{
@@ -855,10 +860,22 @@ button{
                     color: white;
                     font-weight: 600;
                     font-family: Inter;
-                    font-size: 25px;
+                    font-size: 20px;
                     width: 100%;
-                    padding: 10px 20px;
+                    padding: 5px 16px;
                 }
+            }
+        }
+        .EyeCatch_smartphone{
+            display: none;
+        }
+        .EyeCatch{
+            padding: 0 8%;
+            width: 86%;
+
+            img{
+                width: 100%;
+                height: auto;
             }
         }
         .Entry_related{
@@ -966,6 +983,10 @@ button{
         .document{
             background-color: rgb(230, 230, 230);
             padding-bottom: 80px;
+
+            .for_today_smartphone{
+                display: none;
+            }
 
             .h3_wrap{
                 width: 100%;
@@ -1319,38 +1340,48 @@ button{
     }
 }
 
-@media screen and (max-width: 439px) {
+@media (max-width: 439px) {
     .tournament{
-        padding-top: 63px;
+        padding-top: 0;
 
-        .title{
-            font-size: 35px;
-            margin: 30px 40px;
-        }
-        .liner {
-            height: 12px;
-            margin: -57px 0 37px calc(5px + 10%);
-        }
-        @keyframes drawLine {
-        0% {
-            width: 0;
-        }
-        100% {
-            width: 285px;
-        }
+        // .title{
+        //     font-size: 35px;
+        //     margin: 30px 40px;
+        // }
+        // .liner {
+        //     height: 12px;
+        //     margin: -57px 0 37px calc(5px + 10%);
+        // }
+        // @keyframes drawLine {
+        // 0% {
+        //     width: 0;
+        // }
+        // 100% {
+        //     width: 285px;
+        // }
+        // }
+        .EyeCatch_smartphone{
+            //写真がないページ対策でmargin-bottomはinfoのmargin-topで指定
+            margin: 0;
+            padding-top: 53px;
+
+            img{
+                width: 100%;
+                height: auto;
+                margin-bottom: -10px;
+            }
         }
         .top{
-            padding: 10px 8%;
-            margin-bottom: 30px;
+            padding: 0 2.5%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
 
             .info{
+                margin-top: 40px;
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
-                margin-top: 60px;
 
                 .wrap{
                     width: 100%;
@@ -1371,18 +1402,20 @@ button{
                     }
                     .date:before,.organizer:before,.venue:before{
                         content: "";
-                        height: 5px;
-                        width: 20%;
+                        height: 8px;
+                        width: 21.5%;
                         background-color: #424242;
                         margin-right: 15px;
+                        margin-left: 2.5%;
                         border-radius: 20px 0 0 20px;
                     }
                     .date:after,.organizer:after,.venue:after{
                         content: "";
-                        height: 5px;
-                        width: 60%;
+                        height: 8px;
+                        width: 57.5%;
                         background-color: #424242;
                         margin-left: 15px;
+                        margin-right: 2.5%;
                         border-radius: 0 20px 20px 0;
                     }
                     .date_value,.organizer_value,.venue_value{
@@ -1394,7 +1427,7 @@ button{
                         display: flex;
                         flex-wrap: wrap;
                         justify-content:space-between;
-                        font-size: 16px;
+                        font-size: 18px;
                         margin: 0 3%;
                         padding: 5px 0;
 
@@ -1406,14 +1439,14 @@ button{
                     .organizer_value{
                         text-align: left;
                         margin: 0;
-                        font-size: 16px;
+                        font-size: 18px;
                     }
                     .venue_value{
                         display: flex;
                         flex-wrap: wrap;
                         justify-self: start;
                         margin: 0 3% 30px 3%;
-                        font-size: 16px;
+                        font-size: 18px;
                         padding: 5px 0;
 
                         .single_venue{
@@ -1425,48 +1458,18 @@ button{
             .for_today{
                 display: none;
             }
-            .for_today_smartphone{
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items:start;
-                margin: 10px 0;
-
-                .text{
-                    width: 100%;
-                    text-align: center;
-                    font-size: 18px;
-                    height: 25px;
-                    margin: 20px 0;
-                }
-                button{
-                    font-family: Audiowide;
-                    text-align: center;
-                    border: none;
-                    transition: background-color 0.3s ease-in-out;
-                    border-radius: 50px;
-                    background-color: #ccc;
-                    font-size: 20px;
-                    width: 250px;
-                    padding: 15px 20px;
-                }
-                button:hover{
-                    background-color: #00CED1;
-                    color: white;
-                }
-            }
-            .namecard_smartphone{
+            .namecard{
                 width: 100%;
                 background-color: #424242;
-                padding: 25px 15px;
-                border-radius: 25px;
+                padding:8px 15px;
+                border-radius: 15px;
+                margin-top: 20px;
 
-                img{
-                    width: 45px;
-                    height: 45px;
-                    margin-bottom: 8px;
-                }
+                // img{
+                //     width: 45px;
+                //     height: 45px;
+                //     margin-bottom: 8px;
+                // }
                 .tournament_name{
                     color: white;
                     display: flex;
@@ -1494,16 +1497,16 @@ button{
 
                 .tournament_name_value{
                     color: white;
-                    font-weight: 600;
+                    font-weight: 700;
                     font-family: Inter;
-                    font-size: 18px;
+                    font-size: 20px;
                     width: 100%;
                     padding: 0;
                 }
             }
-            .namecard{
-               display: none;
-            }
+        }
+        .EyeCatch{
+            display: none;
         }
         .Entry_related{
             display: flex;
@@ -1583,7 +1586,7 @@ button{
                 align-items: center;
                 justify-content: center;
                 flex-wrap: wrap;
-                margin-top: -70px;
+                margin-top: -100px;
                 margin-bottom: 70px;
                 
                 img{
@@ -1621,6 +1624,38 @@ button{
         .document{
             background-color: rgb(230, 230, 230);
             padding-bottom: 50px;
+
+            .for_today_smartphone{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items:start;
+                margin: 20px 0 10px 0;
+
+                .text{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 18px;
+                    height: 25px;
+                    margin: 10px 0 20px 0;
+                }
+                button{
+                    font-family: Audiowide;
+                    text-align: center;
+                    border: none;
+                    transition: background-color 0.3s ease-in-out;
+                    border-radius: 50px;
+                    background-color: #ccc;
+                    font-size: 20px;
+                    width: 250px;
+                    padding: 15px 20px;
+                }
+                button:hover{
+                    background-color: #00CED1;
+                    color: white;
+                }
+            }
 
             .h3_wrap{
                 width: 100%;
